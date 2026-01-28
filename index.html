@@ -1,16 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>로또 번호 생성기</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+  <div class="container">
+    <h1>로또 번호 생성기</h1>
+    <p class="description">1~45 중 행운의 6개 번호를 뽑아보세요!</p>
+
+    <div class="lotto-numbers" id="lottoNumbers">
+      <div class="number-ball empty">?</div>
+      <div class="number-ball empty">?</div>
+      <div class="number-ball empty">?</div>
+      <div class="number-ball empty">?</div>
+      <div class="number-ball empty">?</div>
+      <div class="number-ball empty">?</div>
+      <span class="plus">+</span>
+      <div class="number-ball bonus empty">?</div>
+    </div>
+
+    <button class="generate-btn" onclick="generateLotto()">번호 생성</button>
+
+    <div class="history">
+      <h3>생성 기록</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
-
-//----
