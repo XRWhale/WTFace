@@ -234,6 +234,18 @@ h1 {
   color: #1a0533;
 }
 
+.container p,
+.container .subtitle,
+.container .upload-text,
+.container .upload-hint,
+.container .disclaimer {
+  color: #555;
+}
+
+.container .subtitle {
+  color: #666;
+}
+
 .result-container {
   max-width: 520px;
 }
@@ -275,13 +287,13 @@ h1 {
 
 .upload-text {
   font-size: 1.1rem;
-  color: #333;
+  color: #333 !important;
   font-weight: 600;
 }
 
 .upload-hint {
   font-size: 0.85rem;
-  color: #999;
+  color: #888 !important;
   margin-top: 4px;
 }
 
