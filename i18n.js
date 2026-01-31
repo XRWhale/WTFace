@@ -311,8 +311,15 @@ const T = {
   },
 };
 
-// ── Current language ──
-let currentLang = localStorage.getItem('lang') || 'ko';
+// ── Detect default language ──
+function getDefaultLang() {
+  const saved = localStorage.getItem('lang');
+  if (saved) return saved;
+  const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+  return browserLang.startsWith('ko') ? 'ko' : 'en';
+}
+
+let currentLang = getDefaultLang();
 
 function setLang(lang) {
   currentLang = lang;
