@@ -310,7 +310,10 @@ function showResult() {
 // ── Share ──
 function shareResult() {
   const type = window._lastResult;
-  const text = `I got "${type.name}" ${type.emoji} on AI Face Reading! ${type.desc}\n\nTry it yourself!`;
+  const lang = localStorage.getItem('lang') || 'ko';
+  const text = lang === 'ko'
+    ? `나의 관상 동물상은 "${type.nameKo}" ${type.emoji}! ${type.desc}\n\n너도 해봐!`
+    : `I got "${type.name}" ${type.emoji} on My Face Reading! ${type.desc}\n\nTry it yourself!`;
 
   if (navigator.share) {
     navigator.share({ title: 'AI Face Reading Result', text }).catch(() => {});
