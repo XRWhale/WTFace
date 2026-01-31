@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Face Reading - AI 관상 분석 | 나의 동물상 찾기</title>
-  <meta name="description" content="AI 기반 관상 분석으로 나의 동물상을 알아보세요. 동양 관상학에 기반한 재미있는 얼굴 분석 서비스입니다. 호랑이상, 여우상, 토끼상 등 9가지 동물상 중 나는 어떤 유형일까요?" />
-  <meta name="keywords" content="AI 관상, 동물상 테스트, 얼굴 분석, 관상학, 호랑이상, 여우상, 토끼상, 사슴상, face reading" />
-  <meta property="og:title" content="AI Face Reading - AI 관상 분석 | 나의 동물상 찾기" />
-  <meta property="og:description" content="AI가 분석하는 나의 동물상! 사진 한 장으로 알아보는 관상 분석 서비스" />
+  <title>내 관상 동물상 - 동양 관상으로 보는 나의 얼굴 동물상 테스트</title>
+  <meta name="description" content="동양 관상학으로 내 얼굴의 동물상을 알아보세요! 사진 한 장이면 OK. 호랑이상, 여우상, 토끼상 등 9가지 동물상 중 나는 어떤 유형? 무료 관상 테스트" />
+  <meta name="keywords" content="관상 테스트, 동물상 테스트, 내 동물상, 관상 보기, 얼굴 관상, 관상학, 호랑이상, 여우상, 토끼상, 사슴상, face reading" />
+  <meta property="og:title" content="내 관상 동물상 - 동양 관상으로 보는 나의 얼굴 동물상 테스트" />
+  <meta property="og:description" content="동양 관상학으로 내 얼굴의 동물상을 알아보세요! 사진 한 장이면 OK" />
+  <link rel="icon" href="/tiger_eye_glow.ico" type="image/x-icon" />
   <meta property="og:type" content="website" />
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
@@ -34,7 +35,7 @@
 
   <!-- Navigation -->
   <nav class="nav-bar">
-    <a href="/" class="nav-logo">AI Face Reading</a>
+    <a href="/" class="nav-logo">&#x1F52E; 내 관상 동물상</a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#types">Animal Types</a>
@@ -48,17 +49,17 @@
   <section class="hero-section" id="home">
     <div class="hero-content">
       <div class="header-icon">&#x1F52E;</div>
-      <h1>AI Face Reading</h1>
-      <p class="hero-desc">AI 기반 관상 분석으로 나의 동물상을 알아보세요.<br>동양 관상학(Eastern Physiognomy)에 영감을 받은 재미있는 얼굴 분석 서비스입니다.</p>
-      <a href="#try" class="btn btn-primary hero-cta">Start Analysis</a>
+      <h1>내 관상 동물상</h1>
+      <p class="hero-desc">동양 관상학으로 내 얼굴의 동물상을 알아보세요!<br>사진 한 장이면 나의 숨겨진 동물 기질을 확인할 수 있습니다.</p>
+      <a href="#try" class="btn btn-primary hero-cta">관상 분석 시작하기</a>
     </div>
   </section>
 
   <!-- About Section -->
   <section class="content-section" id="about">
     <div class="section-inner">
-      <h2>What is AI Face Reading?</h2>
-      <p>AI Face Reading은 동양의 전통 관상학(觀相學)에서 영감을 받아 제작된 엔터테인먼트 서비스입니다. 관상학은 수천 년의 역사를 가진 동양 문화의 한 분야로, 얼굴의 생김새를 통해 그 사람의 성격과 운명을 읽어내는 학문입니다.</p>
+      <h2>내 관상 동물상이란?</h2>
+      <p>"내 관상 동물상"은 동양의 전통 관상학(觀相學)에서 영감을 받아 제작된 엔터테인먼트 서비스입니다. 관상학은 수천 년의 역사를 가진 동양 문화의 한 분야로, 얼굴의 생김새를 통해 그 사람의 성격과 운명을 읽어내는 학문입니다.</p>
       <p>본 서비스는 사용자가 업로드한 얼굴 사진을 분석하여 <strong>9가지 동물상</strong> 중 하나로 매칭합니다. 각 동물상은 고유한 성격 특성, 강점, 약점, 궁합 정보를 포함하고 있어 자신을 재미있게 돌아볼 수 있는 기회를 제공합니다.</p>
 
       <div class="info-grid">
@@ -85,24 +86,24 @@
   <section class="content-section app-section" id="try">
     <!-- Screen 1: Upload -->
     <div class="container" id="uploadScreen">
-      <h2 class="section-title">Try It Now</h2>
-      <p class="subtitle">Upload your photo and discover your animal spirit</p>
+      <h2 class="section-title">지금 바로 해보기</h2>
+      <p class="subtitle">사진을 올리고 나의 동물상을 확인하세요</p>
 
       <div class="upload-area" id="uploadArea">
         <div class="upload-icon">&#x1F4F8;</div>
-        <p class="upload-text">Tap to upload your photo</p>
-        <p class="upload-hint">or drag &amp; drop here</p>
+        <p class="upload-text">사진을 선택하세요</p>
+        <p class="upload-hint">또는 여기에 드래그 &amp; 드롭</p>
         <input type="file" id="fileInput" accept="image/*" hidden />
       </div>
 
       <div class="preview-area" id="previewArea" style="display:none;">
         <img id="previewImg" alt="Uploaded face photo preview" />
-        <button class="btn btn-secondary" id="retakeBtn">Choose Another</button>
+        <button class="btn btn-secondary" id="retakeBtn">다른 사진 선택</button>
       </div>
 
-      <button class="btn btn-primary" id="analyzeBtn" disabled>Analyze My Face</button>
+      <button class="btn btn-primary" id="analyzeBtn" disabled>내 관상 분석하기</button>
 
-      <p class="disclaimer">&#x1F3AD; For entertainment only. Not based on real science!</p>
+      <p class="disclaimer">&#x1F3AD; 재미로 즐기는 엔터테인먼트 서비스입니다!</p>
     </div>
 
     <!-- Screen 2: Analyzing -->
@@ -111,7 +112,7 @@
         <img id="scanImg" class="scan-photo" alt="Face being analyzed" />
         <div class="scan-line"></div>
       </div>
-      <h2 class="analyzing-text">Reading your face...</h2>
+      <h2 class="analyzing-text">관상을 읽고 있습니다...</h2>
       <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
       <p class="analyzing-detail" id="analyzingDetail">Detecting face shape...</p>
     </div>
@@ -120,8 +121,8 @@
     <div class="container result-container" id="resultScreen" style="display:none;">
       <div id="resultContent"></div>
       <div class="result-actions">
-        <button class="btn btn-primary" id="shareBtn">Share Result &#x1F4E4;</button>
-        <button class="btn btn-secondary" id="retryBtn">Try Again</button>
+        <button class="btn btn-primary" id="shareBtn">결과 공유하기 &#x1F4E4;</button>
+        <button class="btn btn-secondary" id="retryBtn">다시 해보기</button>
       </div>
     </div>
   </section>
@@ -129,7 +130,7 @@
   <!-- Animal Types Guide -->
   <section class="content-section" id="types">
     <div class="section-inner">
-      <h2>9 Animal Spirit Types</h2>
+      <h2>9가지 관상 동물상</h2>
       <p class="section-desc">관상학에서 영감을 받은 9가지 동물상을 소개합니다. 각 유형은 고유한 성격 특성과 매력을 가지고 있습니다.</p>
 
       <div class="types-grid">
@@ -185,10 +186,10 @@
   <!-- Knowledge Section -->
   <section class="content-section alt-bg" id="knowledge">
     <div class="section-inner">
-      <h2>Understanding Face Reading (Physiognomy)</h2>
+      <h2>관상학이란? (觀相學)</h2>
       <p>관상학(觀相學, Physiognomy)은 동아시아에서 수천 년간 전해 내려온 전통 학문입니다. 한국에서는 '관상', 중국에서는 '면상(面相)', 일본에서는 '인상(人相)'이라 불리며, 얼굴의 이목구비와 윤곽을 통해 그 사람의 성격, 건강, 운명을 읽어내는 학문입니다.</p>
 
-      <h3>Key Elements of Face Reading</h3>
+      <h3>관상의 핵심 요소</h3>
       <div class="knowledge-grid">
         <div class="knowledge-card">
           <h4>&#x1F441;&#xFE0F; Eyes (눈)</h4>
@@ -209,7 +210,7 @@
       </div>
 
       <div class="disclaimer-box">
-        <p><strong>Disclaimer:</strong> AI Face Reading은 순수한 엔터테인먼트 목적으로 제작되었습니다. 관상학은 과학적으로 검증된 학문이 아니며, 본 서비스의 분석 결과는 재미를 위한 것입니다. 실제 성격이나 운명을 판단하는 용도로 사용하지 마세요.</p>
+        <p><strong>Disclaimer:</strong> "내 관상 동물상"은 순수한 엔터테인먼트 목적으로 제작되었습니다. 관상학은 과학적으로 검증된 학문이 아니며, 본 서비스의 분석 결과는 재미를 위한 것입니다. 실제 성격이나 운명을 판단하는 용도로 사용하지 마세요.</p>
       </div>
     </div>
   </section>
@@ -217,7 +218,7 @@
   <!-- FAQ Section -->
   <section class="content-section" id="faq">
     <div class="section-inner">
-      <h2>Frequently Asked Questions</h2>
+      <h2>자주 묻는 질문</h2>
 
       <div class="faq-list">
         <details class="faq-item">
@@ -256,8 +257,8 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-col">
-        <h4>AI Face Reading</h4>
-        <p>AI 기반 관상 분석으로 나의 동물상을 알아보는 엔터테인먼트 서비스입니다.</p>
+        <h4>내 관상 동물상</h4>
+        <p>동양 관상학으로 내 얼굴의 동물상을 알아보는 엔터테인먼트 서비스입니다.</p>
       </div>
       <div class="footer-col">
         <h4>Links</h4>
@@ -280,7 +281,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 AI Face Reading. All rights reserved. This service is for entertainment purposes only.</p>
+      <p>&copy; 2025 내 관상 동물상. All rights reserved. 본 서비스는 엔터테인먼트 목적으로 제공됩니다.</p>
     </div>
   </footer>
 
