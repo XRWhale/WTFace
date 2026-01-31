@@ -2,132 +2,179 @@
 const TYPES = [
   {
     id: 'tiger', emoji: '🐯',
-    name: 'Tiger Spirit', nameKo: '호랑이상 (虎相)',
-    desc: 'A natural-born leader radiating powerful energy. You command attention the moment you walk into a room.',
-    eyeDesc: 'Sharp, intense gaze → Strong willpower',
-    noseDesc: 'Prominent bridge → Ambition & drive',
-    lipDesc: 'Firm, defined lips → Decisiveness',
-    faceDesc: 'Angular jawline → Leadership presence',
-    pros: ['Incredible leadership skills', 'Fearless decision-maker', 'Inspires loyalty in others'],
-    cons: ['Can be overly dominant', 'Stubborn when challenged', 'Struggles to show vulnerability'],
-    match: 'Deer Spirit', matchEmoji: '🦌',
+    name: { en: 'Tiger Spirit', ko: '호랑이상' },
+    nameKo: '호랑이상 (虎相)',
+    desc: {
+      en: 'A natural-born leader radiating powerful energy. You command attention the moment you walk into a room.',
+      ko: '타고난 리더십과 강렬한 카리스마의 소유자. 방에 들어서는 순간 모든 시선을 사로잡는 존재감을 가졌습니다.'
+    },
+    eyeDesc: { en: 'Sharp, intense gaze → Strong willpower', ko: '날카롭고 강렬한 눈빛 → 강한 의지력' },
+    noseDesc: { en: 'Prominent bridge → Ambition & drive', ko: '높은 콧대 → 야망과 추진력' },
+    lipDesc: { en: 'Firm, defined lips → Decisiveness', ko: '단단하고 뚜렷한 입술 → 결단력' },
+    faceDesc: { en: 'Angular jawline → Leadership presence', ko: '각진 턱선 → 리더십 있는 존재감' },
+    pros: { en: ['Incredible leadership skills', 'Fearless decision-maker', 'Inspires loyalty in others'], ko: ['뛰어난 리더십', '두려움 없는 결단력', '주변의 충성심을 이끌어냄'] },
+    cons: { en: ['Can be overly dominant', 'Stubborn when challenged', 'Struggles to show vulnerability'], ko: ['지나치게 지배적일 수 있음', '도전받으면 고집이 셈', '약한 모습을 보이기 어려움'] },
+    match: { en: 'Deer Spirit', ko: '사슴상' }, matchEmoji: '🦌',
     color: '#e85d3a'
   },
   {
     id: 'fox', emoji: '🦊',
-    name: 'Fox Spirit', nameKo: '여우상 (狐相)',
-    desc: 'Magnetic charm meets sharp intuition. You see through people effortlessly and always know the right thing to say.',
-    eyeDesc: 'Upturned, alluring eyes → Natural magnetism',
-    noseDesc: 'Delicate, refined → Keen perception',
-    lipDesc: 'Curved smile → Persuasive communication',
-    faceDesc: 'Oval, balanced face → Adaptability',
-    pros: ['Extremely perceptive', 'Effortless social charm', 'Quick-witted & adaptable'],
-    cons: ['May overthink motives', 'Guarded with true feelings', 'Can seem mysterious to others'],
-    match: 'Crane Spirit', matchEmoji: '🏵️',
+    name: { en: 'Fox Spirit', ko: '여우상' },
+    nameKo: '여우상 (狐相)',
+    desc: {
+      en: 'Magnetic charm meets sharp intuition. You see through people effortlessly and always know the right thing to say.',
+      ko: '매혹적인 매력과 예리한 직감의 소유자. 사람의 마음을 꿰뚫어 보며, 항상 적절한 말을 찾아냅니다.'
+    },
+    eyeDesc: { en: 'Upturned, alluring eyes → Natural magnetism', ko: '올라간 매혹적인 눈꼬리 → 타고난 매력' },
+    noseDesc: { en: 'Delicate, refined → Keen perception', ko: '섬세하고 정교한 코 → 예리한 직감' },
+    lipDesc: { en: 'Curved smile → Persuasive communication', ko: '곡선미 있는 미소 → 설득력 있는 소통' },
+    faceDesc: { en: 'Oval, balanced face → Adaptability', ko: '갸름하고 균형 잡힌 얼굴 → 적응력' },
+    pros: { en: ['Extremely perceptive', 'Effortless social charm', 'Quick-witted & adaptable'], ko: ['뛰어난 관찰력', '자연스러운 사교 매력', '재치 있고 적응력 강함'] },
+    cons: { en: ['May overthink motives', 'Guarded with true feelings', 'Can seem mysterious to others'], ko: ['동기를 지나치게 분석함', '진심을 잘 드러내지 않음', '신비로워 보일 수 있음'] },
+    match: { en: 'Crane Spirit', ko: '학상' }, matchEmoji: '🏵️',
     color: '#f59e42'
   },
   {
     id: 'magpie', emoji: '🐦',
-    name: 'Magpie Spirit', nameKo: '까치상 (鵲相)',
-    desc: 'The ultimate connector! Your bright energy and quick wit make you the life of every gathering.',
-    eyeDesc: 'Bright, sparkling eyes → Curiosity & joy',
-    noseDesc: 'Soft, rounded → Approachable warmth',
-    lipDesc: 'Wide, expressive smile → Gift of gab',
-    faceDesc: 'Heart-shaped face → Youthful energy',
-    pros: ['Incredible networking ability', 'Brings joy wherever you go', 'Excellent communicator'],
-    cons: ['Easily distracted by new things', 'May spread energy too thin', 'Dislikes being alone'],
-    match: 'Turtle Spirit', matchEmoji: '🐢',
+    name: { en: 'Magpie Spirit', ko: '까치상' },
+    nameKo: '까치상 (鵲相)',
+    desc: {
+      en: 'The ultimate connector! Your bright energy and quick wit make you the life of every gathering.',
+      ko: '최고의 소통가이자 분위기 메이커! 밝은 에너지와 재치로 어디서든 중심이 됩니다.'
+    },
+    eyeDesc: { en: 'Bright, sparkling eyes → Curiosity & joy', ko: '반짝이는 밝은 눈 → 호기심과 기쁨' },
+    noseDesc: { en: 'Soft, rounded → Approachable warmth', ko: '부드럽고 둥근 코 → 다가가기 쉬운 따뜻함' },
+    lipDesc: { en: 'Wide, expressive smile → Gift of gab', ko: '넓고 표현력 있는 미소 → 뛰어난 말재주' },
+    faceDesc: { en: 'Heart-shaped face → Youthful energy', ko: '하트형 얼굴 → 젊은 에너지' },
+    pros: { en: ['Incredible networking ability', 'Brings joy wherever you go', 'Excellent communicator'], ko: ['뛰어난 인맥 형성 능력', '어디서든 기쁨을 전파', '탁월한 소통 능력'] },
+    cons: { en: ['Easily distracted by new things', 'May spread energy too thin', 'Dislikes being alone'], ko: ['새로운 것에 쉽게 주의가 분산됨', '에너지를 너무 분산시킬 수 있음', '혼자 있는 것을 싫어함'] },
+    match: { en: 'Turtle Spirit', ko: '거북상' }, matchEmoji: '🐢',
     color: '#4a9fe5'
   },
   {
     id: 'crane', emoji: '🏵️',
-    name: 'Crane Spirit', nameKo: '학상 (鶴相)',
-    desc: 'Calm wisdom radiates from you. You see the bigger picture while others get lost in details.',
-    eyeDesc: 'Calm, steady gaze → Inner peace',
-    noseDesc: 'Straight, balanced → Focus & clarity',
-    lipDesc: 'Thin, upturned corners → Quiet wisdom',
-    faceDesc: 'Elongated, refined face → Elegance',
-    pros: ['Exceptional analytical mind', 'Emotionally stable', 'Naturally wise beyond years'],
-    cons: ['Overthinks before acting', 'Hard to read emotionally', 'May seem distant'],
-    match: 'Fox Spirit', matchEmoji: '🦊',
+    name: { en: 'Crane Spirit', ko: '학상' },
+    nameKo: '학상 (鶴相)',
+    desc: {
+      en: 'Calm wisdom radiates from you. You see the bigger picture while others get lost in details.',
+      ko: '고요한 지혜가 빛나는 유형. 다른 사람들이 디테일에 빠질 때 큰 그림을 봅니다.'
+    },
+    eyeDesc: { en: 'Calm, steady gaze → Inner peace', ko: '차분하고 안정된 눈빛 → 내면의 평화' },
+    noseDesc: { en: 'Straight, balanced → Focus & clarity', ko: '곧고 균형 잡힌 코 → 집중력과 명확함' },
+    lipDesc: { en: 'Thin, upturned corners → Quiet wisdom', ko: '얇고 올라간 입꼬리 → 조용한 지혜' },
+    faceDesc: { en: 'Elongated, refined face → Elegance', ko: '길고 세련된 얼굴 → 우아함' },
+    pros: { en: ['Exceptional analytical mind', 'Emotionally stable', 'Naturally wise beyond years'], ko: ['뛰어난 분석력', '감정적으로 안정적', '나이에 비해 자연스러운 지혜'] },
+    cons: { en: ['Overthinks before acting', 'Hard to read emotionally', 'May seem distant'], ko: ['행동 전 지나치게 생각함', '감정을 읽기 어려움', '거리감 있어 보일 수 있음'] },
+    match: { en: 'Fox Spirit', ko: '여우상' }, matchEmoji: '🦊',
     color: '#7c6fb0'
   },
   {
     id: 'turtle', emoji: '🐢',
-    name: 'Turtle Spirit', nameKo: '거북상 (龜相)',
-    desc: 'The rock everyone relies on. Your steady, dependable nature builds empires that last forever.',
-    eyeDesc: 'Warm, trustworthy eyes → Reliability',
-    noseDesc: 'Broad, grounded → Stability',
-    lipDesc: 'Full, gentle lips → Kindness',
-    faceDesc: 'Round, sturdy face → Endurance',
-    pros: ['Unshakeable loyalty', 'Patient & persistent', 'Builds lasting foundations'],
-    cons: ['Resistant to change', 'Can be overly cautious', 'Slow to open up'],
-    match: 'Magpie Spirit', matchEmoji: '🐦',
+    name: { en: 'Turtle Spirit', ko: '거북상' },
+    nameKo: '거북상 (龜相)',
+    desc: {
+      en: 'The rock everyone relies on. Your steady, dependable nature builds empires that last forever.',
+      ko: '모든 사람이 의지하는 든든한 존재. 꾸준하고 신뢰할 수 있는 성격으로 영원히 지속되는 기반을 만듭니다.'
+    },
+    eyeDesc: { en: 'Warm, trustworthy eyes → Reliability', ko: '따뜻하고 신뢰감 있는 눈 → 믿음직함' },
+    noseDesc: { en: 'Broad, grounded → Stability', ko: '넓고 안정감 있는 코 → 안정감' },
+    lipDesc: { en: 'Full, gentle lips → Kindness', ko: '도톰하고 부드러운 입술 → 친절함' },
+    faceDesc: { en: 'Round, sturdy face → Endurance', ko: '둥글고 단단한 얼굴 → 인내력' },
+    pros: { en: ['Unshakeable loyalty', 'Patient & persistent', 'Builds lasting foundations'], ko: ['흔들리지 않는 충성심', '인내심 강하고 끈기 있음', '오래가는 기반을 구축'] },
+    cons: { en: ['Resistant to change', 'Can be overly cautious', 'Slow to open up'], ko: ['변화에 저항적', '지나치게 신중할 수 있음', '마음을 여는 데 시간이 걸림'] },
+    match: { en: 'Magpie Spirit', ko: '까치상' }, matchEmoji: '🐦',
     color: '#2a9d6e'
   },
   {
     id: 'rabbit', emoji: '🐰',
-    name: 'Rabbit Spirit', nameKo: '토끼상 (兔相)',
-    desc: 'Pure-hearted and deeply sensitive. You feel everything intensely and your empathy touches everyone around you.',
-    eyeDesc: 'Large, gentle eyes → Deep empathy',
-    noseDesc: 'Small, soft → Innocence',
-    lipDesc: 'Soft, rosy lips → Tenderness',
-    faceDesc: 'Soft, rounded features → Approachability',
-    pros: ['Deeply empathetic', 'Creative & imaginative', 'Brings comfort to others'],
-    cons: ['Takes criticism personally', 'Can be indecisive', 'Needs frequent reassurance'],
-    match: 'Tiger Spirit', matchEmoji: '🐯',
+    name: { en: 'Rabbit Spirit', ko: '토끼상' },
+    nameKo: '토끼상 (兔相)',
+    desc: {
+      en: 'Pure-hearted and deeply sensitive. You feel everything intensely and your empathy touches everyone around you.',
+      ko: '순수한 마음과 깊은 감수성의 소유자. 모든 것을 깊이 느끼며 주변 사람들에게 공감과 위로를 전합니다.'
+    },
+    eyeDesc: { en: 'Large, gentle eyes → Deep empathy', ko: '크고 부드러운 눈 → 깊은 공감 능력' },
+    noseDesc: { en: 'Small, soft → Innocence', ko: '작고 부드러운 코 → 순수함' },
+    lipDesc: { en: 'Soft, rosy lips → Tenderness', ko: '부드럽고 발그레한 입술 → 다정함' },
+    faceDesc: { en: 'Soft, rounded features → Approachability', ko: '부드럽고 둥근 이목구비 → 친근함' },
+    pros: { en: ['Deeply empathetic', 'Creative & imaginative', 'Brings comfort to others'], ko: ['깊은 공감 능력', '창의적이고 상상력 풍부', '주변에 위로를 줌'] },
+    cons: { en: ['Takes criticism personally', 'Can be indecisive', 'Needs frequent reassurance'], ko: ['비판을 개인적으로 받아들임', '우유부단할 수 있음', '자주 확인받고 싶어함'] },
+    match: { en: 'Tiger Spirit', ko: '호랑이상' }, matchEmoji: '🐯',
     color: '#e88dba'
   },
   {
     id: 'dragon', emoji: '🐉',
-    name: 'Dragon Spirit', nameKo: '용상 (龍相)',
-    desc: 'Unstoppable ambition meets raw talent. You were born to achieve greatness and nothing can stand in your way.',
-    eyeDesc: 'Piercing, focused eyes → Determination',
-    noseDesc: 'Strong, high bridge → Authority',
-    lipDesc: 'Bold, defined lips → Commanding voice',
-    faceDesc: 'Strong bone structure → Power',
-    pros: ['Limitless ambition', 'Natural authority', 'Achieves extraordinary goals'],
-    cons: ['Workaholic tendencies', 'Impatient with slowness', 'High expectations of others'],
-    match: 'Phoenix Spirit', matchEmoji: '🔥',
+    name: { en: 'Dragon Spirit', ko: '용상' },
+    nameKo: '용상 (龍相)',
+    desc: {
+      en: 'Unstoppable ambition meets raw talent. You were born to achieve greatness and nothing can stand in your way.',
+      ko: '멈출 수 없는 야망과 타고난 재능의 소유자. 위대한 업적을 이루기 위해 태어났으며 아무것도 당신을 막을 수 없습니다.'
+    },
+    eyeDesc: { en: 'Piercing, focused eyes → Determination', ko: '관통하는 집중된 눈빛 → 결의' },
+    noseDesc: { en: 'Strong, high bridge → Authority', ko: '강하고 높은 콧대 → 권위' },
+    lipDesc: { en: 'Bold, defined lips → Commanding voice', ko: '대담하고 뚜렷한 입술 → 위엄 있는 목소리' },
+    faceDesc: { en: 'Strong bone structure → Power', ko: '강한 골격 → 힘' },
+    pros: { en: ['Limitless ambition', 'Natural authority', 'Achieves extraordinary goals'], ko: ['무한한 야망', '타고난 권위', '비범한 목표를 달성'] },
+    cons: { en: ['Workaholic tendencies', 'Impatient with slowness', 'High expectations of others'], ko: ['일중독 경향', '느린 것에 대한 조급함', '타인에 대한 높은 기대'] },
+    match: { en: 'Phoenix Spirit', ko: '봉황상' }, matchEmoji: '🔥',
     color: '#c9363a'
   },
   {
     id: 'deer', emoji: '🦌',
-    name: 'Deer Spirit', nameKo: '사슴상 (鹿相)',
-    desc: 'Gentle grace meets quiet strength. You have a calming aura that makes everyone feel safe and understood.',
-    eyeDesc: 'Soft, doe-like eyes → Compassion',
-    noseDesc: 'Gentle slope → Harmony',
-    lipDesc: 'Natural, relaxed lips → Authenticity',
-    faceDesc: 'Oval, graceful face → Natural beauty',
-    pros: ['Deeply compassionate', 'Creates harmony everywhere', 'Quietly strong'],
-    cons: ['Avoids confrontation', 'May neglect own needs', 'Too trusting at times'],
-    match: 'Tiger Spirit', matchEmoji: '🐯',
+    name: { en: 'Deer Spirit', ko: '사슴상' },
+    nameKo: '사슴상 (鹿相)',
+    desc: {
+      en: 'Gentle grace meets quiet strength. You have a calming aura that makes everyone feel safe and understood.',
+      ko: '부드러운 우아함과 조용한 힘의 소유자. 모든 사람을 안전하고 이해받는다고 느끼게 하는 차분한 아우라가 있습니다.'
+    },
+    eyeDesc: { en: 'Soft, doe-like eyes → Compassion', ko: '사슴 같은 부드러운 눈 → 자비로움' },
+    noseDesc: { en: 'Gentle slope → Harmony', ko: '부드러운 콧날 → 조화' },
+    lipDesc: { en: 'Natural, relaxed lips → Authenticity', ko: '자연스럽고 편안한 입술 → 진정성' },
+    faceDesc: { en: 'Oval, graceful face → Natural beauty', ko: '갸름하고 우아한 얼굴 → 자연미' },
+    pros: { en: ['Deeply compassionate', 'Creates harmony everywhere', 'Quietly strong'], ko: ['깊은 자비심', '어디서든 조화를 만듦', '조용하지만 강함'] },
+    cons: { en: ['Avoids confrontation', 'May neglect own needs', 'Too trusting at times'], ko: ['대립을 피함', '자신의 필요를 무시할 수 있음', '때로 너무 잘 믿음'] },
+    match: { en: 'Tiger Spirit', ko: '호랑이상' }, matchEmoji: '🐯',
     color: '#b08d57'
   },
   {
     id: 'phoenix', emoji: '🔥',
-    name: 'Phoenix Spirit', nameKo: '봉황상 (鳳凰相)',
-    desc: 'A true creative soul blazing with artistic fire. You transform everything you touch into something beautiful.',
-    eyeDesc: 'Dreamy, expressive eyes → Artistic vision',
-    noseDesc: 'Unique, distinctive → Originality',
-    lipDesc: 'Expressive, dynamic lips → Passion',
-    faceDesc: 'Distinctive features → Unforgettable presence',
-    pros: ['Boundless creativity', 'Transforms adversity into art', 'Uniquely inspiring'],
-    cons: ['Emotionally intense', 'Struggles with routine', 'Perfectionistic tendencies'],
-    match: 'Dragon Spirit', matchEmoji: '🐉',
+    name: { en: 'Phoenix Spirit', ko: '봉황상' },
+    nameKo: '봉황상 (鳳凰相)',
+    desc: {
+      en: 'A true creative soul blazing with artistic fire. You transform everything you touch into something beautiful.',
+      ko: '예술적 열정으로 타오르는 진정한 크리에이터. 손대는 모든 것을 아름답게 변환시킵니다.'
+    },
+    eyeDesc: { en: 'Dreamy, expressive eyes → Artistic vision', ko: '몽환적이고 표현력 있는 눈 → 예술적 비전' },
+    noseDesc: { en: 'Unique, distinctive → Originality', ko: '독특하고 개성적인 코 → 독창성' },
+    lipDesc: { en: 'Expressive, dynamic lips → Passion', ko: '표현력 넘치는 역동적 입술 → 열정' },
+    faceDesc: { en: 'Distinctive features → Unforgettable presence', ko: '독특한 이목구비 → 잊을 수 없는 존재감' },
+    pros: { en: ['Boundless creativity', 'Transforms adversity into art', 'Uniquely inspiring'], ko: ['무한한 창의력', '역경을 예술로 변환', '독보적인 영감을 줌'] },
+    cons: { en: ['Emotionally intense', 'Struggles with routine', 'Perfectionistic tendencies'], ko: ['감정적으로 격렬함', '일상에 적응하기 어려움', '완벽주의 경향'] },
+    match: { en: 'Dragon Spirit', ko: '용상' }, matchEmoji: '🐉',
     color: '#d4542a'
   }
 ];
 
-const ANALYSIS_STEPS = [
-  'Detecting face shape...',
-  'Analyzing eye features...',
-  'Reading nose structure...',
-  'Examining lip curvature...',
-  'Calculating facial proportions...',
-  'Matching animal spirit...',
-  'Generating your reading...'
-];
+const ANALYSIS_STEPS = {
+  en: [
+    'Detecting face shape...',
+    'Analyzing eye features...',
+    'Reading nose structure...',
+    'Examining lip curvature...',
+    'Calculating facial proportions...',
+    'Matching animal spirit...',
+    'Generating your reading...'
+  ],
+  ko: [
+    '얼굴형을 감지하는 중...',
+    '눈 특징을 분석하는 중...',
+    '코 구조를 읽는 중...',
+    '입술 곡선을 살피는 중...',
+    '얼굴 비율을 계산하는 중...',
+    '동물상을 매칭하는 중...',
+    '관상 결과를 생성하는 중...'
+  ]
+};
 
 // ── State ──
 let uploadedImageData = null;
@@ -213,6 +260,11 @@ function simpleHash(str) {
   return Math.abs(hash);
 }
 
+// ── Get current language ──
+function getLang() {
+  return localStorage.getItem('lang') || 'ko';
+}
+
 // ── Analysis ──
 function startAnalysis() {
   showScreen('analyzingScreen');
@@ -221,16 +273,18 @@ function startAnalysis() {
   const fill = document.getElementById('progressFill');
   const detail = document.getElementById('analyzingDetail');
   let step = 0;
+  const lang = getLang();
+  const steps = ANALYSIS_STEPS[lang] || ANALYSIS_STEPS.ko;
 
   fill.style.width = '0%';
 
   const interval = setInterval(() => {
     step++;
-    const pct = Math.min((step / ANALYSIS_STEPS.length) * 100, 100);
+    const pct = Math.min((step / steps.length) * 100, 100);
     fill.style.width = pct + '%';
-    detail.textContent = ANALYSIS_STEPS[Math.min(step, ANALYSIS_STEPS.length - 1)];
+    detail.textContent = steps[Math.min(step, steps.length - 1)];
 
-    if (step >= ANALYSIS_STEPS.length) {
+    if (step >= steps.length) {
       clearInterval(interval);
       setTimeout(() => showResult(), 400);
     }
@@ -241,62 +295,108 @@ function startAnalysis() {
 function showResult() {
   const hash = simpleHash(uploadedImageData);
   const type = TYPES[hash % TYPES.length];
+  const lang = getLang();
 
   // Secondary random values from hash
   const luckNum = (hash % 9) + 1;
-  const luckColor = ['Gold', 'Crimson', 'Azure', 'Emerald', 'Violet', 'Silver', 'Amber', 'Rose', 'Indigo'][hash % 9];
+  const luckColors = {
+    en: ['Gold', 'Crimson', 'Azure', 'Emerald', 'Violet', 'Silver', 'Amber', 'Rose', 'Indigo'],
+    ko: ['골드', '크림슨', '하늘색', '에메랄드', '바이올렛', '실버', '앰버', '로즈', '인디고']
+  };
+  const luckColor = (luckColors[lang] || luckColors.ko)[hash % 9];
   const pct = 70 + (hash % 25);
+
+  // Localized labels
+  const L = {
+    en: {
+      features: '🔍 Face Feature Analysis',
+      eyes: 'Eyes', nose: 'Nose', lips: 'Lips', faceShape: 'Face Shape',
+      strengths: '✨ Strengths',
+      watchOut: '💭 Watch Out For',
+      bestMatch: '💕 Best Match',
+      matchText: (emoji, name) => `${emoji} Your ideal partner is <strong>${name}</strong>`,
+      fortune: '🎯 Today\'s Fortune',
+      luckyNum: 'Lucky number',
+      luckyColor: 'Lucky color',
+      luckScore: 'Overall Luck Score',
+      disclaimer: '🎭 This is for entertainment purposes only!'
+    },
+    ko: {
+      features: '🔍 이목구비 분석',
+      eyes: '눈', nose: '코', lips: '입', faceShape: '얼굴형',
+      strengths: '✨ 강점',
+      watchOut: '💭 주의할 점',
+      bestMatch: '💕 최고의 궁합',
+      matchText: (emoji, name) => `${emoji} 당신의 이상적인 파트너는 <strong>${name}</strong>`,
+      fortune: '🎯 오늘의 운세',
+      luckyNum: '행운의 숫자',
+      luckyColor: '행운의 색',
+      luckScore: '종합 행운 점수',
+      disclaimer: '🎭 이 결과는 재미를 위한 것입니다!'
+    }
+  };
+  const l = L[lang] || L.ko;
+
+  const typeName = type.name[lang] || type.name.ko;
+  const typeDesc = type.desc[lang] || type.desc.ko;
+  const eyeDesc = type.eyeDesc[lang] || type.eyeDesc.ko;
+  const noseDesc = type.noseDesc[lang] || type.noseDesc.ko;
+  const lipDesc = type.lipDesc[lang] || type.lipDesc.ko;
+  const faceDesc = type.faceDesc[lang] || type.faceDesc.ko;
+  const pros = type.pros[lang] || type.pros.ko;
+  const cons = type.cons[lang] || type.cons.ko;
+  const matchName = type.match[lang] || type.match.ko;
 
   const html = `
     <div class="result-card">
       <div class="result-photo-wrap">
-        <img src="${uploadedImageData}" class="result-photo" />
+        <img src="${uploadedImageData}" class="result-photo" alt="Your face photo" />
       </div>
 
       <div class="result-type-badge" style="background:${type.color}">
         <span class="result-emoji">${type.emoji}</span>
-        <h2 class="result-type-name">${type.name}</h2>
+        <h2 class="result-type-name">${typeName}</h2>
         <p class="result-type-ko">${type.nameKo}</p>
       </div>
 
-      <p class="result-desc">${type.desc}</p>
+      <p class="result-desc">${typeDesc}</p>
 
       <div class="result-section">
-        <h3>🔍 Face Feature Analysis</h3>
+        <h3>${l.features}</h3>
         <ul class="feature-list">
-          <li><strong>Eyes:</strong> ${type.eyeDesc}</li>
-          <li><strong>Nose:</strong> ${type.noseDesc}</li>
-          <li><strong>Lips:</strong> ${type.lipDesc}</li>
-          <li><strong>Face Shape:</strong> ${type.faceDesc}</li>
+          <li><strong>${l.eyes}:</strong> ${eyeDesc}</li>
+          <li><strong>${l.nose}:</strong> ${noseDesc}</li>
+          <li><strong>${l.lips}:</strong> ${lipDesc}</li>
+          <li><strong>${l.faceShape}:</strong> ${faceDesc}</li>
         </ul>
       </div>
 
       <div class="result-section">
-        <h3>✨ Strengths</h3>
-        <ul class="tag-list pros">${type.pros.map(p => `<li>✔ ${p}</li>`).join('')}</ul>
+        <h3>${l.strengths}</h3>
+        <ul class="tag-list pros">${pros.map(p => `<li>✔ ${p}</li>`).join('')}</ul>
       </div>
 
       <div class="result-section">
-        <h3>💭 Watch Out For</h3>
-        <ul class="tag-list cons">${type.cons.map(c => `<li>✖ ${c}</li>`).join('')}</ul>
+        <h3>${l.watchOut}</h3>
+        <ul class="tag-list cons">${cons.map(c => `<li>✖ ${c}</li>`).join('')}</ul>
       </div>
 
       <div class="result-section match-section" style="border-color:${type.color}">
-        <h3>💕 Best Match</h3>
-        <p class="match-text">${type.matchEmoji} Your ideal partner is <strong>${type.match}</strong></p>
+        <h3>${l.bestMatch}</h3>
+        <p class="match-text">${l.matchText(type.matchEmoji, matchName)}</p>
       </div>
 
       <div class="result-section fortune-section">
-        <h3>🎯 Today's Fortune</h3>
-        <p>Lucky number: <strong>${luckNum}</strong></p>
-        <p>Lucky color: <strong>${luckColor}</strong></p>
+        <h3>${l.fortune}</h3>
+        <p>${l.luckyNum}: <strong>${luckNum}</strong></p>
+        <p>${l.luckyColor}: <strong>${luckColor}</strong></p>
         <div class="fortune-bar-wrap">
           <div class="fortune-bar" style="width:${pct}%;background:${type.color}">${pct}%</div>
         </div>
-        <p class="fortune-label">Overall Luck Score</p>
+        <p class="fortune-label">${l.luckScore}</p>
       </div>
 
-      <p class="result-disclaimer">🎭 This is for entertainment purposes only!</p>
+      <p class="result-disclaimer">${l.disclaimer}</p>
     </div>
   `;
 
@@ -311,9 +411,11 @@ function showResult() {
 function shareResult() {
   const type = window._lastResult;
   const lang = localStorage.getItem('lang') || 'ko';
+  const name = type.name[lang] || type.name.ko;
+  const desc = type.desc[lang] || type.desc.ko;
   const text = lang === 'ko'
-    ? `나의 관상 동물상은 "${type.nameKo}" ${type.emoji}! ${type.desc}\n\n너도 해봐!`
-    : `I got "${type.name}" ${type.emoji} on My Face Reading! ${type.desc}\n\nTry it yourself!`;
+    ? `나의 관상 동물상은 "${type.nameKo}" ${type.emoji}! ${desc}\n\n너도 해봐!`
+    : `I got "${name}" ${type.emoji} on My Face Reading! ${desc}\n\nTry it yourself!`;
 
   if (navigator.share) {
     navigator.share({ title: 'AI Face Reading Result', text }).catch(() => {});
