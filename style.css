@@ -1219,6 +1219,10 @@ h1 {
 }
 .back-link:hover { color: var(--gold-light); }
 
+/* ── Bilingual lang switching ── */
+html[lang="en"] .lang-ko { display: none; }
+html[lang="ko"] .lang-en { display: none; }
+
 /* ── Knowledge Extra Content ── */
 .knowledge-history {
   margin: 28px 0;

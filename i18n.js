@@ -4,8 +4,22 @@ const T = {
   'nav.logo': { ko: '&#x1F52E; 내 관상 동물상', en: '&#x1F52E; Face Reading' },
   'nav.about': { ko: '소개', en: 'About' },
   'nav.types': { ko: '동물상 유형', en: 'Animal Types' },
+  'nav.guide': { ko: '관상 가이드', en: 'Guide' },
   'nav.faq': { ko: 'FAQ', en: 'FAQ' },
   'nav.privacy': { ko: '개인정보', en: 'Privacy' },
+
+  // Article pages
+  'article.back': { ko: '&#8592; 메인으로 돌아가기', en: '&#8592; Back to Home' },
+  'article.related': { ko: '관련 아티클', en: 'Related Articles' },
+  'physio.meta':  { ko: '관상학 가이드', en: 'Physiognomy Guide' },
+  'physio.title': { ko: '관상학의 역사와 문화', en: 'The History & Culture of Physiognomy' },
+  'physio.desc':  { ko: '동양 관상학(觀相學)의 기원부터 조선시대까지, 수천 년의 역사와 핵심 원리를 탐구합니다.', en: 'From ancient China to the Joseon Dynasty — explore thousands of years of Eastern face-reading wisdom.' },
+  'guide.meta':   { ko: '동물상 가이드', en: 'Animal Type Guide' },
+  'guide.title':  { ko: '9가지 동물상 완전 가이드', en: 'Complete Guide to 9 Animal Spirit Types' },
+  'guide.desc':   { ko: '호랑이상부터 봉황상까지, 9가지 관상 동물상의 성격·직업·연애 스타일·궁합을 한 페이지에서 완전 정리합니다.', en: 'From Tiger to Phoenix — personality, career, love style, and compatibility for all 9 animal spirit types.' },
+  'tips.meta':    { ko: '분석 가이드', en: 'Analysis Guide' },
+  'tips.title':   { ko: '관상 분석 잘 받는 법', en: 'How to Get the Best Face Reading' },
+  'tips.desc':    { ko: '정확한 관상 분석을 위한 올바른 사진 촬영법부터 결과를 일상에서 활용하는 방법까지.', en: 'From choosing the right photo to interpreting your results — make the most of your face reading.' },
 
   // Hero
   'hero.title': { ko: '내 관상 동물상', en: 'My Face Reading' },
@@ -348,6 +362,18 @@ function setLang(lang) {
     document.title = lang === 'ko' ? '개인정보처리방침 - 내 관상 동물상' : 'Privacy Policy - My Face Reading';
   } else if (document.querySelector('[data-page="terms"]')) {
     document.title = lang === 'ko' ? '이용약관 - 내 관상 동물상' : 'Terms of Service - My Face Reading';
+  } else if (document.querySelector('[data-page="article-physio"]')) {
+    document.title = lang === 'ko'
+      ? '관상학의 역사와 문화 | 내 관상 동물상'
+      : 'History & Culture of Physiognomy | My Face Reading';
+  } else if (document.querySelector('[data-page="article-guide"]')) {
+    document.title = lang === 'ko'
+      ? '9가지 동물상 완전 가이드 | 내 관상 동물상'
+      : 'Complete Guide to 9 Animal Spirit Types | My Face Reading';
+  } else if (document.querySelector('[data-page="article-tips"]')) {
+    document.title = lang === 'ko'
+      ? '관상 분석 잘 받는 법 | 내 관상 동물상'
+      : 'How to Get the Best Face Reading | My Face Reading';
   }
 }
 

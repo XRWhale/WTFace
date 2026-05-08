@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-page="article-guide">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>9가지 동물상 완전 가이드 — 성격·직업·연애·궁합 | 내 관상 동물상</title>
+  <title>9가지 동물상 완전 가이드 | 내 관상 동물상</title>
   <meta name="description" content="호랑이상, 여우상, 까치상, 학상, 거북상, 토끼상, 용상, 사슴상, 봉황상. 9가지 관상 동물상의 성격 특성, 추천 직업, 연애 스타일, 궁합을 완전히 정리했습니다." />
-  <meta name="keywords" content="동물상 가이드, 호랑이상, 여우상, 토끼상, 사슴상, 용상, 봉황상, 학상, 거북상, 까치상, 동물상 궁합, 동물상 직업" />
   <link rel="canonical" href="https://ai-test-d4dec.web.app/article-animal-guide.html" />
   <link rel="icon" href="/tiger_eye_glow.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,29 +14,21 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "9가지 동물상 완전 가이드 — 성격·직업·연애·궁합",
-    "description": "9가지 관상 동물상(호랑이, 여우, 까치, 학, 거북, 토끼, 용, 사슴, 봉황)의 성격 특성, 추천 직업, 연애 스타일, 궁합을 완전히 정리한 가이드.",
+    "headline": "9가지 동물상 완전 가이드",
+    "description": "9가지 관상 동물상(호랑이, 여우, 까치, 학, 거북, 토끼, 용, 사슴, 봉황)의 성격·직업·연애·궁합 완전 가이드.",
     "url": "https://ai-test-d4dec.web.app/article-animal-guide.html",
     "isPartOf": { "@type": "WebSite", "name": "내 관상 동물상", "url": "https://ai-test-d4dec.web.app/" },
-    "inLanguage": "ko",
-    "articleSection": "동물상 가이드",
-    "breadcrumb": {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://ai-test-d4dec.web.app/" },
-        { "@type": "ListItem", "position": 2, "name": "9가지 동물상 완전 가이드", "item": "https://ai-test-d4dec.web.app/article-animal-guide.html" }
-      ]
-    }
+    "inLanguage": ["ko","en"]
   }
   </script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-96NHE03ZGS"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-96NHE03ZGS');
+    (function(){
+      var l=localStorage.getItem('lang')||((navigator.language||'').startsWith('ko')?'ko':'en');
+      document.documentElement.lang=l;
+    })();
   </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-96NHE03ZGS"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-96NHE03ZGS');</script>
   <meta name="google-adsense-account" content="ca-pub-2785113979236345">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2785113979236345" crossorigin="anonymous"></script>
   <link href='/style.css' rel='stylesheet'>
@@ -45,326 +36,435 @@
 <body>
 
   <nav class="nav-bar">
-    <a href="/" class="nav-logo">&#x1F52E; 내 관상 동물상</a>
+    <a href="/" class="nav-logo" data-i18n="nav.logo">&#x1F52E; 내 관상 동물상</a>
     <div class="nav-links">
-      <a href="/#about">소개</a>
-      <a href="/#types">동물상 유형</a>
-      <a href="/#articles">관상 가이드</a>
-      <a href="/#faq">FAQ</a>
-      <a href="privacy.html">개인정보</a>
+      <a href="/#about" data-i18n="nav.about">소개</a>
+      <a href="/#types" data-i18n="nav.types">동물상 유형</a>
+      <a href="/#articles" data-i18n="nav.guide">관상 가이드</a>
+      <a href="/#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="privacy.html" data-i18n="nav.privacy">개인정보</a>
     </div>
+    <button class="lang-toggle" id="langToggle">EN</button>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
   </nav>
 
   <div class="article-page">
 
     <div class="article-hero">
-      <p class="article-meta">동물상 가이드</p>
-      <h1>9가지 동물상 완전 가이드</h1>
-      <p class="article-desc">호랑이상부터 봉황상까지, 9가지 관상 동물상의 성격·직업·연애 스타일·궁합을 한 페이지에서 완전 정리합니다.</p>
+      <p class="article-meta" data-i18n="guide.meta">동물상 가이드</p>
+      <h1 data-i18n="guide.title">9가지 동물상 완전 가이드</h1>
+      <p class="article-desc" data-i18n="guide.desc">호랑이상부터 봉황상까지, 9가지 관상 동물상의 성격·직업·연애 스타일·궁합을 한 페이지에서 완전 정리합니다.</p>
     </div>
 
     <section class="content-section">
       <div class="article-body">
-        <a href="/" class="back-link">&#8592; 메인으로 돌아가기</a>
+        <a href="/" class="back-link" data-i18n="article.back">&#8592; 메인으로 돌아가기</a>
 
-        <p>관상학에서 영감을 받아 탄생한 9가지 동물상은 각기 다른 얼굴 특징과 성격 유형을 대표합니다. 동양 관상학에서 얼굴은 단순한 외모가 아니라 그 사람의 기질과 에너지를 담은 지도라고 봅니다. 아래에서 각 동물상의 특성을 자세히 알아보세요.</p>
+        <p class="lang-ko">관상학에서 영감을 받아 탄생한 9가지 동물상은 각기 다른 얼굴 특징과 성격 유형을 대표합니다. 동양 관상학에서 얼굴은 단순한 외모가 아니라 그 사람의 기질과 에너지를 담은 지도라고 봅니다. 아래에서 각 동물상의 특성을 자세히 알아보세요.</p>
+        <p class="lang-en">The 9 animal spirit types draw on physiognomy to represent distinct combinations of facial characteristics and personality. In Eastern tradition, the face is a map of one's energy and nature. Explore each type in depth below.</p>
 
-        <!-- 호랑이상 -->
-        <h2>&#x1F42F; 호랑이상 (虎相)</h2>
+        <!-- 호랑이상 / Tiger -->
+        <h2>&#x1F42F; <span class="lang-ko">호랑이상 (虎相)</span><span class="lang-en">Tiger Spirit (虎相)</span></h2>
         <div class="animal-detail-card">
           <div class="animal-detail-header">
             <div class="animal-detail-emoji">&#x1F42F;</div>
-            <div class="animal-detail-name">호랑이상
-              <small>타고난 리더 · 강렬한 카리스마</small>
+            <div class="animal-detail-name">
+              <span class="lang-ko">호랑이상<small>타고난 리더 · 강렬한 카리스마</small></span>
+              <span class="lang-en">Tiger Spirit<small>Natural Leader · Intense Charisma</small></span>
             </div>
           </div>
-          <p>호랑이상은 9가지 동물상 중 가장 강렬한 존재감을 가진 유형입니다. 날카롭고 강한 눈매, 뚜렷한 눈썹, 각진 턱선이 특징으로, 방에 들어서는 순간 모든 시선을 사로잡는 타고난 카리스마를 지니고 있습니다. 어린 시절부터 리더 역할을 자연스럽게 맡게 되는 경우가 많으며, 불의에 타협하지 않는 강직한 성격을 가지고 있습니다.</p>
+          <p class="lang-ko">호랑이상은 9가지 동물상 중 가장 강렬한 존재감을 가진 유형입니다. 날카롭고 강한 눈매, 뚜렷한 눈썹, 각진 턱선이 특징으로, 방에 들어서는 순간 모든 시선을 사로잡는 타고난 카리스마를 지니고 있습니다. 어린 시절부터 리더 역할을 자연스럽게 맡게 되는 경우가 많으며, 불의에 타협하지 않는 강직한 성격을 가지고 있습니다.</p>
+          <p class="lang-en">The Tiger Spirit is the most commanding of all 9 types. Sharp, powerful eyes, prominent brows, and an angular jawline radiate authority the moment you walk into a room. Leadership comes naturally from an early age, and a firm sense of justice is non-negotiable.</p>
           <div class="detail-grid">
             <div class="detail-item">
-              <div class="detail-item-label">성격 특성</div>
-              <div class="detail-item-value">강한 리더십, 결단력, 정의감, 충성심. 도전적인 상황에서 오히려 빛을 발함</div>
+              <div class="detail-item-label lang-ko">성격 특성</div>
+              <div class="detail-item-label lang-en">Personality</div>
+              <div class="detail-item-value lang-ko">강한 리더십, 결단력, 정의감, 충성심. 도전적인 상황에서 오히려 빛을 발함</div>
+              <div class="detail-item-value lang-en">Strong leadership, decisiveness, integrity, loyalty. Shines brightest when challenged.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">추천 직업</div>
-              <div class="detail-item-value">CEO, 군인·경찰, 정치인, 스포츠 감독, 변호사, 기업가</div>
+              <div class="detail-item-label lang-ko">추천 직업</div>
+              <div class="detail-item-label lang-en">Careers</div>
+              <div class="detail-item-value lang-ko">CEO, 군인·경찰, 정치인, 스포츠 감독, 변호사, 기업가</div>
+              <div class="detail-item-value lang-en">CEO, military/police, politician, sports coach, attorney, entrepreneur</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">연애 스타일</div>
-              <div class="detail-item-value">직진형. 좋아하는 사람에게 적극적으로 다가가며, 한번 결심하면 끝까지 책임지는 타입</div>
+              <div class="detail-item-label lang-ko">연애 스타일</div>
+              <div class="detail-item-label lang-en">Love Style</div>
+              <div class="detail-item-value lang-ko">직진형. 한번 결심하면 끝까지 책임지는 타입</div>
+              <div class="detail-item-value lang-en">Direct and decisive. Once committed, deeply loyal and responsible.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">궁합 & 주의</div>
-              <div class="detail-item-value">사슴상과 최고의 궁합. 자신보다 강한 사람에게는 심한 경쟁심을 보일 수 있음</div>
+              <div class="detail-item-label lang-ko">궁합</div>
+              <div class="detail-item-label lang-en">Compatibility</div>
+              <div class="detail-item-value lang-ko">사슴상과 최고의 궁합 &#x1F98C;</div>
+              <div class="detail-item-value lang-en">Best match: Deer Spirit &#x1F98C;</div>
             </div>
           </div>
         </div>
 
-        <!-- 여우상 -->
-        <h2>&#x1F98A; 여우상 (狐相)</h2>
+        <!-- 여우상 / Fox -->
+        <h2>&#x1F98A; <span class="lang-ko">여우상 (狐相)</span><span class="lang-en">Fox Spirit (狐相)</span></h2>
         <div class="animal-detail-card">
           <div class="animal-detail-header">
             <div class="animal-detail-emoji">&#x1F98A;</div>
-            <div class="animal-detail-name">여우상
-              <small>매혹적인 매력 · 날카로운 직감</small>
+            <div class="animal-detail-name">
+              <span class="lang-ko">여우상<small>매혹적인 매력 · 날카로운 직감</small></span>
+              <span class="lang-en">Fox Spirit<small>Magnetic Charm · Sharp Intuition</small></span>
             </div>
           </div>
-          <p>여우상은 올라간 눈꼬리, 갸름한 얼굴형, 섬세한 이목구비가 특징입니다. 타고난 매력과 직감으로 사람의 마음을 꿰뚫어 보는 능력이 있으며, 어떤 상황에서도 적절한 말과 행동을 찾아내는 사교 능력이 뛰어납니다. 때로는 신비로워 보일 만큼 감정을 잘 드러내지 않지만, 깊이 신뢰하는 사람에게는 진심으로 헌신합니다.</p>
+          <p class="lang-ko">여우상은 올라간 눈꼬리, 갸름한 얼굴형, 섬세한 이목구비가 특징입니다. 타고난 매력과 직감으로 사람의 마음을 꿰뚫어 보는 능력이 있으며, 깊이 신뢰하는 사람에게는 진심으로 헌신합니다.</p>
+          <p class="lang-en">The Fox Spirit has upturned eye corners, an oval face, and delicate features. Innate magnetism and sharp intuition allow effortless reading of people — and once trust is given, loyalty runs deep.</p>
           <div class="detail-grid">
             <div class="detail-item">
-              <div class="detail-item-label">성격 특성</div>
-              <div class="detail-item-value">탁월한 관찰력, 예리한 직감, 전략적 사고, 사교성. 다층적인 내면을 가진 복잡한 매력</div>
+              <div class="detail-item-label lang-ko">성격 특성</div>
+              <div class="detail-item-label lang-en">Personality</div>
+              <div class="detail-item-value lang-ko">탁월한 관찰력, 예리한 직감, 전략적 사고, 다층적인 내면의 매력</div>
+              <div class="detail-item-value lang-en">Exceptional perception, sharp intuition, strategic thinking, a complex and layered charm.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">추천 직업</div>
-              <div class="detail-item-value">마케터, 심리상담사, 외교관, 작가, 배우, 전략 컨설턴트</div>
+              <div class="detail-item-label lang-ko">추천 직업</div>
+              <div class="detail-item-label lang-en">Careers</div>
+              <div class="detail-item-value lang-ko">마케터, 심리상담사, 외교관, 작가, 배우, 전략 컨설턴트</div>
+              <div class="detail-item-value lang-en">Marketer, therapist, diplomat, writer, actor, strategy consultant</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">연애 스타일</div>
-              <div class="detail-item-value">밀당의 달인. 상대방을 충분히 파악한 후 움직이며, 한번 마음을 열면 깊고 진한 사랑을 줌</div>
+              <div class="detail-item-label lang-ko">연애 스타일</div>
+              <div class="detail-item-label lang-en">Love Style</div>
+              <div class="detail-item-value lang-ko">밀당의 달인. 마음을 열면 깊고 진한 사랑을 줌</div>
+              <div class="detail-item-value lang-en">Natural at push-and-pull. When they open up, loves deeply and devotedly.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">궁합 & 주의</div>
-              <div class="detail-item-value">학상과 최고의 궁합. 지나친 분석 때문에 관계에서 감정 표현이 부족해질 수 있음</div>
+              <div class="detail-item-label lang-ko">궁합</div>
+              <div class="detail-item-label lang-en">Compatibility</div>
+              <div class="detail-item-value lang-ko">학상과 최고의 궁합 &#x1F3F5;&#xFE0F;</div>
+              <div class="detail-item-value lang-en">Best match: Crane Spirit &#x1F3F5;&#xFE0F;</div>
             </div>
           </div>
         </div>
 
-        <!-- 까치상 -->
-        <h2>&#x1F426; 까치상 (鵲相)</h2>
+        <!-- 까치상 / Magpie -->
+        <h2>&#x1F426; <span class="lang-ko">까치상 (鵲相)</span><span class="lang-en">Magpie Spirit (鵲相)</span></h2>
         <div class="animal-detail-card">
           <div class="animal-detail-header">
             <div class="animal-detail-emoji">&#x1F426;</div>
-            <div class="animal-detail-name">까치상
-              <small>최고의 소통가 · 분위기 메이커</small>
+            <div class="animal-detail-name">
+              <span class="lang-ko">까치상<small>최고의 소통가 · 분위기 메이커</small></span>
+              <span class="lang-en">Magpie Spirit<small>Ultimate Connector · Energy Bringer</small></span>
             </div>
           </div>
-          <p>까치상은 반짝이는 밝은 눈, 하트형 혹은 둥근 얼굴, 환한 미소가 특징입니다. 어디서든 먼저 대화를 시작하고 분위기를 띄우는 천재적인 소통 능력을 가지고 있습니다. 사람들과 함께하는 것을 진심으로 좋아하며, 넓은 인맥과 따뜻한 에너지로 주변 사람들에게 활기를 불어넣습니다. 재치 있는 유머와 밝은 성격으로 단숨에 분위기의 중심이 됩니다.</p>
+          <p class="lang-ko">까치상은 반짝이는 밝은 눈, 하트형 얼굴, 환한 미소가 특징입니다. 어디서든 먼저 대화를 시작하고 분위기를 띄우는 천재적인 소통 능력을 가지고 있습니다.</p>
+          <p class="lang-en">The Magpie Spirit has bright, sparkling eyes, a heart-shaped face, and a radiant smile. A gifted communicator who naturally initiates conversation and energizes any room they enter.</p>
           <div class="detail-grid">
             <div class="detail-item">
-              <div class="detail-item-label">성격 특성</div>
-              <div class="detail-item-value">뛰어난 소통력, 사교성, 낙천성, 창의성. 사람과 사람을 연결하는 네트워킹의 귀재</div>
+              <div class="detail-item-label lang-ko">성격 특성</div>
+              <div class="detail-item-label lang-en">Personality</div>
+              <div class="detail-item-value lang-ko">뛰어난 소통력, 사교성, 낙천성, 창의성. 사람과 사람을 연결하는 네트워킹의 귀재</div>
+              <div class="detail-item-value lang-en">Outstanding communication, sociability, optimism, creativity. A natural networker who connects people.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">추천 직업</div>
-              <div class="detail-item-value">MC·진행자, 영업직, PR 전문가, 교사, SNS 크리에이터, 이벤트 플래너</div>
+              <div class="detail-item-label lang-ko">추천 직업</div>
+              <div class="detail-item-label lang-en">Careers</div>
+              <div class="detail-item-value lang-ko">MC·진행자, 영업직, PR, 교사, SNS 크리에이터, 이벤트 플래너</div>
+              <div class="detail-item-value lang-en">Host/MC, sales, PR, teacher, content creator, event planner</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">연애 스타일</div>
-              <div class="detail-item-value">설레는 썸을 즐기는 타입. 상대에게 끊임없이 에너지와 웃음을 선사하며 밝고 활기찬 연애를 함</div>
+              <div class="detail-item-label lang-ko">연애 스타일</div>
+              <div class="detail-item-label lang-en">Love Style</div>
+              <div class="detail-item-value lang-ko">설레는 썸을 즐기는 타입. 밝고 활기찬 연애를 함</div>
+              <div class="detail-item-value lang-en">Thrives on courtship. Brings endless energy and laughter to a partner.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">궁합 & 주의</div>
-              <div class="detail-item-value">거북상과 최고의 궁합. 넘치는 에너지 때문에 혼자만의 시간을 가지는 것이 중요</div>
+              <div class="detail-item-label lang-ko">궁합</div>
+              <div class="detail-item-label lang-en">Compatibility</div>
+              <div class="detail-item-value lang-ko">거북상과 최고의 궁합 &#x1F422;</div>
+              <div class="detail-item-value lang-en">Best match: Turtle Spirit &#x1F422;</div>
             </div>
           </div>
         </div>
 
-        <!-- 학상 -->
-        <h2>&#x1F3F5;&#xFE0F; 학상 (鶴相)</h2>
+        <!-- 학상 / Crane -->
+        <h2>&#x1F3F5;&#xFE0F; <span class="lang-ko">학상 (鶴相)</span><span class="lang-en">Crane Spirit (鶴相)</span></h2>
         <div class="animal-detail-card">
           <div class="animal-detail-header">
             <div class="animal-detail-emoji">&#x1F3F5;&#xFE0F;</div>
-            <div class="animal-detail-name">학상
-              <small>고요한 지혜 · 우아한 품격</small>
+            <div class="animal-detail-name">
+              <span class="lang-ko">학상<small>고요한 지혜 · 우아한 품격</small></span>
+              <span class="lang-en">Crane Spirit<small>Quiet Wisdom · Graceful Elegance</small></span>
             </div>
           </div>
-          <p>학상은 차분하고 깊은 눈빛, 길고 균형 잡힌 얼굴형, 세련된 이목구비가 특징입니다. 감정에 흔들리지 않는 냉철함과 큰 그림을 보는 통찰력을 가지고 있습니다. 화려하게 앞에 나서기보다 뒤에서 전체적인 방향을 설계하는 것을 선호하며, 자신만의 확고한 기준과 미학적 감각을 가지고 있습니다. 말 한마디, 행동 하나에 품격이 배어납니다.</p>
+          <p class="lang-ko">학상은 차분하고 깊은 눈빛, 길고 균형 잡힌 얼굴형, 세련된 이목구비가 특징입니다. 화려하게 앞에 나서기보다 뒤에서 전체적인 방향을 설계하는 것을 선호하며, 자신만의 확고한 기준과 미학적 감각을 가지고 있습니다.</p>
+          <p class="lang-en">The Crane Spirit has a calm, deep gaze, a long and balanced face, and refined features. Prefers designing strategy behind the scenes rather than taking center stage, with a firm aesthetic sensibility all their own.</p>
           <div class="detail-grid">
             <div class="detail-item">
-              <div class="detail-item-label">성격 특성</div>
-              <div class="detail-item-value">깊은 통찰력, 세련된 취향, 냉철한 판단력. 소수와 깊이 있는 관계를 맺는 것을 선호</div>
+              <div class="detail-item-label lang-ko">성격 특성</div>
+              <div class="detail-item-label lang-en">Personality</div>
+              <div class="detail-item-value lang-ko">깊은 통찰력, 세련된 취향, 냉철한 판단력. 소수와 깊이 있는 관계를 선호</div>
+              <div class="detail-item-value lang-en">Deep insight, refined taste, cool judgment. Prefers few but profound relationships.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">추천 직업</div>
-              <div class="detail-item-value">학자·연구원, 예술가, 큐레이터, 건축가, 철학자, 고급 컨설턴트</div>
+              <div class="detail-item-label lang-ko">추천 직업</div>
+              <div class="detail-item-label lang-en">Careers</div>
+              <div class="detail-item-value lang-ko">학자·연구원, 예술가, 큐레이터, 건축가, 철학자</div>
+              <div class="detail-item-value lang-en">Scholar/researcher, artist, curator, architect, philosopher</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">연애 스타일</div>
-              <div class="detail-item-value">느리지만 확실하게 마음을 여는 타입. 한번 사랑에 빠지면 깊고 순수하게 헌신하는 낭만주의자</div>
+              <div class="detail-item-label lang-ko">연애 스타일</div>
+              <div class="detail-item-label lang-en">Love Style</div>
+              <div class="detail-item-value lang-ko">느리지만 확실하게 마음을 여는 낭만주의자</div>
+              <div class="detail-item-value lang-en">Opens slowly but surely — a deep and devoted romantic.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">궁합 & 주의</div>
-              <div class="detail-item-value">여우상과 최고의 궁합. 완벽주의 성향으로 자신과 타인에게 지나치게 높은 기준을 적용할 수 있음</div>
+              <div class="detail-item-label lang-ko">궁합</div>
+              <div class="detail-item-label lang-en">Compatibility</div>
+              <div class="detail-item-value lang-ko">여우상과 최고의 궁합 &#x1F98A;</div>
+              <div class="detail-item-value lang-en">Best match: Fox Spirit &#x1F98A;</div>
             </div>
           </div>
         </div>
 
-        <!-- 거북상 -->
-        <h2>&#x1F422; 거북상 (龜相)</h2>
+        <!-- 거북상 / Turtle -->
+        <h2>&#x1F422; <span class="lang-ko">거북상 (龜相)</span><span class="lang-en">Turtle Spirit (龜相)</span></h2>
         <div class="animal-detail-card">
           <div class="animal-detail-header">
             <div class="animal-detail-emoji">&#x1F422;</div>
-            <div class="animal-detail-name">거북상
-              <small>든든한 기둥 · 한결같은 신뢰</small>
+            <div class="animal-detail-name">
+              <span class="lang-ko">거북상<small>든든한 기둥 · 한결같은 신뢰</small></span>
+              <span class="lang-en">Turtle Spirit<small>Steady Pillar · Unbreakable Trust</small></span>
             </div>
           </div>
-          <p>거북상은 온화하고 따뜻한 눈빛, 둥글고 넉넉한 얼굴형이 특징입니다. 서두르지 않고 꾸준하게 자신의 길을 걸어가는 사람으로, 주변에서 가장 의지하는 존재입니다. 화려한 성공보다 탄탄하고 지속가능한 결과를 추구하며, 약속을 반드시 지키고 책임감이 강합니다. 처음에는 느려 보여도 결국 목표를 달성하는 뚝심과 지구력을 가지고 있습니다.</p>
+          <p class="lang-ko">거북상은 온화하고 따뜻한 눈빛, 둥글고 넉넉한 얼굴형이 특징입니다. 서두르지 않고 꾸준하게 자신의 길을 걸어가는 사람으로, 주변에서 가장 의지하는 존재입니다.</p>
+          <p class="lang-en">The Turtle Spirit has a warm, gentle gaze and a round, generous face. Unhurried and steady, this is the person everyone depends on — never breaking a promise, never cutting corners.</p>
           <div class="detail-grid">
             <div class="detail-item">
-              <div class="detail-item-label">성격 특성</div>
-              <div class="detail-item-value">강한 책임감, 인내심, 신뢰성, 실용적 사고. 위기 상황에서 가장 믿을 수 있는 존재</div>
+              <div class="detail-item-label lang-ko">성격 특성</div>
+              <div class="detail-item-label lang-en">Personality</div>
+              <div class="detail-item-value lang-ko">강한 책임감, 인내심, 신뢰성, 실용적 사고. 위기 상황에서 가장 믿을 수 있는 존재</div>
+              <div class="detail-item-value lang-en">Strong responsibility, patience, reliability, practical thinking. The most dependable person in any crisis.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">추천 직업</div>
-              <div class="detail-item-value">의사, 공무원, 회계사, 엔지니어, 금융 전문가, 공공기관 관리자</div>
+              <div class="detail-item-label lang-ko">추천 직업</div>
+              <div class="detail-item-label lang-en">Careers</div>
+              <div class="detail-item-value lang-ko">의사, 공무원, 회계사, 엔지니어, 금융 전문가</div>
+              <div class="detail-item-value lang-en">Doctor, civil servant, accountant, engineer, financial professional</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">연애 스타일</div>
-              <div class="detail-item-value">천천히 깊어지는 사랑. 화려한 이벤트보다 일상에서의 작은 배려로 사랑을 표현하며, 믿음을 쌓아가는 것을 중요하게 여김</div>
+              <div class="detail-item-label lang-ko">연애 스타일</div>
+              <div class="detail-item-label lang-en">Love Style</div>
+              <div class="detail-item-value lang-ko">천천히 깊어지는 사랑. 작은 배려로 사랑을 표현함</div>
+              <div class="detail-item-value lang-en">Love deepens slowly — expressed through small, consistent acts of care.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">궁합 & 주의</div>
-              <div class="detail-item-value">까치상과 최고의 궁합. 변화에 유연하게 적응하는 연습이 필요하며, 때로는 과감한 결단도 중요</div>
+              <div class="detail-item-label lang-ko">궁합</div>
+              <div class="detail-item-label lang-en">Compatibility</div>
+              <div class="detail-item-value lang-ko">까치상과 최고의 궁합 &#x1F426;</div>
+              <div class="detail-item-value lang-en">Best match: Magpie Spirit &#x1F426;</div>
             </div>
           </div>
         </div>
 
-        <!-- 토끼상 -->
-        <h2>&#x1F430; 토끼상 (兎相)</h2>
+        <!-- 토끼상 / Rabbit -->
+        <h2>&#x1F430; <span class="lang-ko">토끼상 (兎相)</span><span class="lang-en">Rabbit Spirit (兎相)</span></h2>
         <div class="animal-detail-card">
           <div class="animal-detail-header">
             <div class="animal-detail-emoji">&#x1F430;</div>
-            <div class="animal-detail-name">토끼상
-              <small>깊은 감수성 · 순수한 공감</small>
+            <div class="animal-detail-name">
+              <span class="lang-ko">토끼상<small>깊은 감수성 · 순수한 공감</small></span>
+              <span class="lang-en">Rabbit Spirit<small>Deep Sensitivity · Pure Empathy</small></span>
             </div>
           </div>
-          <p>토끼상은 크고 부드러운 눈, 둥글고 사랑스러운 이목구비, 온화한 인상이 특징입니다. 감수성이 풍부하여 세상의 아름다움과 슬픔을 누구보다 깊이 느끼는 유형입니다. 타인의 감정에 민감하게 공명하는 공감 능력이 뛰어나며, 주변 사람들의 아픔과 기쁨을 함께 나누고자 합니다. 예술적 감수성이 뛰어나고 창의적인 표현 방식을 즐깁니다.</p>
+          <p class="lang-ko">토끼상은 크고 부드러운 눈, 둥글고 사랑스러운 이목구비, 온화한 인상이 특징입니다. 감수성이 풍부하여 세상의 아름다움과 슬픔을 누구보다 깊이 느끼며, 타인에 대한 공감 능력이 뛰어납니다.</p>
+          <p class="lang-en">The Rabbit Spirit has large, gentle eyes, soft rounded features, and a warm, approachable appearance. Rich in sensitivity — feeling the world's beauty and sorrow more deeply than others, with exceptional empathy.</p>
           <div class="detail-grid">
             <div class="detail-item">
-              <div class="detail-item-label">성격 특성</div>
-              <div class="detail-item-value">풍부한 감수성, 깊은 공감력, 예술적 재능, 순수함. 상처받기 쉽지만 회복력도 강함</div>
+              <div class="detail-item-label lang-ko">성격 특성</div>
+              <div class="detail-item-label lang-en">Personality</div>
+              <div class="detail-item-value lang-ko">풍부한 감수성, 깊은 공감력, 예술적 재능, 순수함</div>
+              <div class="detail-item-value lang-en">Rich sensitivity, deep empathy, artistic gifts, purity. Easily wounded but resilient.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">추천 직업</div>
-              <div class="detail-item-value">예술가, 음악가, 사회복지사, 간호사, 상담사, 작가, 디자이너</div>
+              <div class="detail-item-label lang-ko">추천 직업</div>
+              <div class="detail-item-label lang-en">Careers</div>
+              <div class="detail-item-value lang-ko">예술가, 음악가, 사회복지사, 간호사, 상담사, 작가, 디자이너</div>
+              <div class="detail-item-value lang-en">Artist, musician, social worker, nurse, counselor, writer, designer</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">연애 스타일</div>
-              <div class="detail-item-value">세심하고 배려 깊은 연애. 상대의 기분과 필요를 먼저 생각하며, 진지하고 감동적인 사랑을 추구함</div>
+              <div class="detail-item-label lang-ko">연애 스타일</div>
+              <div class="detail-item-label lang-en">Love Style</div>
+              <div class="detail-item-value lang-ko">세심하고 배려 깊은 연애. 진지하고 감동적인 사랑을 추구</div>
+              <div class="detail-item-value lang-en">Thoughtful and deeply caring. Always considers the partner first; pursues sincere, heartfelt love.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">궁합 & 주의</div>
-              <div class="detail-item-value">용상과 최고의 궁합. 지나치게 상대방의 감정에 의존하거나 자신의 감정을 억누르지 않도록 주의</div>
+              <div class="detail-item-label lang-ko">궁합</div>
+              <div class="detail-item-label lang-en">Compatibility</div>
+              <div class="detail-item-value lang-ko">용상과 최고의 궁합 &#x1F409;</div>
+              <div class="detail-item-value lang-en">Best match: Dragon Spirit &#x1F409;</div>
             </div>
           </div>
         </div>
 
-        <!-- 용상 -->
-        <h2>&#x1F409; 용상 (龍相)</h2>
+        <!-- 용상 / Dragon -->
+        <h2>&#x1F409; <span class="lang-ko">용상 (龍相)</span><span class="lang-en">Dragon Spirit (龍相)</span></h2>
         <div class="animal-detail-card">
           <div class="animal-detail-header">
             <div class="animal-detail-emoji">&#x1F409;</div>
-            <div class="animal-detail-name">용상
-              <small>멈출 수 없는 야망 · 타고난 재능</small>
+            <div class="animal-detail-name">
+              <span class="lang-ko">용상<small>멈출 수 없는 야망 · 타고난 재능</small></span>
+              <span class="lang-en">Dragon Spirit<small>Unstoppable Ambition · Born Talent</small></span>
             </div>
           </div>
-          <p>용상은 강하고 관록 있는 골격, 깊고 강렬한 눈빛, 도전적인 인상이 특징입니다. 동양 문화에서 용은 최고의 권위와 성공을 상징하는 존재로, 용상을 가진 사람은 큰 꿈과 그것을 실현할 능력을 동시에 타고났다고 봅니다. 어떤 분야에 뛰어들든 최고의 자리를 목표로 하며, 탁월한 멀티태스킹 능력과 추진력을 가지고 있습니다.</p>
+          <p class="lang-ko">용상은 강하고 관록 있는 골격, 깊고 강렬한 눈빛, 도전적인 인상이 특징입니다. 동양 문화에서 용은 최고의 권위와 성공을 상징하는 존재로, 용상을 가진 사람은 큰 꿈과 그것을 실현할 능력을 동시에 타고났다고 봅니다.</p>
+          <p class="lang-en">The Dragon Spirit has a strong, commanding bone structure, deep and intense eyes, and an ambitious presence. In Eastern tradition, the dragon represents the pinnacle of achievement — and those with this spirit are born with both the dream and the drive to realize it.</p>
           <div class="detail-grid">
             <div class="detail-item">
-              <div class="detail-item-label">성격 특성</div>
-              <div class="detail-item-value">강한 야망, 탁월한 재능, 추진력, 다재다능함. 높은 목표를 향해 포기하지 않는 의지</div>
+              <div class="detail-item-label lang-ko">성격 특성</div>
+              <div class="detail-item-label lang-en">Personality</div>
+              <div class="detail-item-value lang-ko">강한 야망, 탁월한 재능, 추진력, 다재다능함. 높은 목표를 향해 포기하지 않는 의지</div>
+              <div class="detail-item-value lang-en">Strong ambition, outstanding talent, drive, versatility. An unrelenting will toward the highest goals.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">추천 직업</div>
-              <div class="detail-item-value">기업 경영자, 의사·변호사, 고위 공직자, 스타 강사, 연예인, 투자가</div>
+              <div class="detail-item-label lang-ko">추천 직업</div>
+              <div class="detail-item-label lang-en">Careers</div>
+              <div class="detail-item-value lang-ko">기업 경영자, 의사·변호사, 고위 공직자, 스타 강사, 연예인, 투자가</div>
+              <div class="detail-item-value lang-en">Business executive, doctor/lawyer, senior official, star educator, entertainer, investor</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">연애 스타일</div>
-              <div class="detail-item-value">열정적이고 드라마틱한 연애. 좋아하는 사람에게 아낌없이 투자하며, 파트너를 자신의 성장 동반자로 여김</div>
+              <div class="detail-item-label lang-ko">연애 스타일</div>
+              <div class="detail-item-label lang-en">Love Style</div>
+              <div class="detail-item-value lang-ko">열정적이고 드라마틱한 연애. 파트너를 성장 동반자로 여김</div>
+              <div class="detail-item-value lang-en">Passionate and dramatic. Sees a partner as a fellow achiever and invests without reservation.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">궁합 & 주의</div>
-              <div class="detail-item-value">토끼상과 최고의 궁합. 완벽주의와 높은 기준으로 인해 주변 사람들에게 부담을 줄 수 있음</div>
+              <div class="detail-item-label lang-ko">궁합</div>
+              <div class="detail-item-label lang-en">Compatibility</div>
+              <div class="detail-item-value lang-ko">토끼상과 최고의 궁합 &#x1F430;</div>
+              <div class="detail-item-value lang-en">Best match: Rabbit Spirit &#x1F430;</div>
             </div>
           </div>
         </div>
 
-        <!-- 사슴상 -->
-        <h2>&#x1F98C; 사슴상 (鹿相)</h2>
+        <!-- 사슴상 / Deer -->
+        <h2>&#x1F98C; <span class="lang-ko">사슴상 (鹿相)</span><span class="lang-en">Deer Spirit (鹿相)</span></h2>
         <div class="animal-detail-card">
           <div class="animal-detail-header">
             <div class="animal-detail-emoji">&#x1F98C;</div>
-            <div class="animal-detail-name">사슴상
-              <small>부드러운 우아함 · 조용한 힘</small>
+            <div class="animal-detail-name">
+              <span class="lang-ko">사슴상<small>부드러운 우아함 · 조용한 힘</small></span>
+              <span class="lang-en">Deer Spirit<small>Gentle Grace · Quiet Strength</small></span>
             </div>
           </div>
-          <p>사슴상은 크고 순수한 눈, 갸름하고 온화한 얼굴형, 섬세한 이목구비가 특징입니다. 조용한 분위기에서도 사람들을 자연스럽게 편안하게 만드는 특별한 아우라를 가지고 있습니다. 겉으로는 부드럽고 연약해 보이지만, 내면에는 흔들리지 않는 조용한 강인함이 있습니다. 모든 사람을 있는 그대로 받아들이는 포용력이 뛰어납니다.</p>
+          <p class="lang-ko">사슴상은 크고 순수한 눈, 갸름하고 온화한 얼굴형, 섬세한 이목구비가 특징입니다. 조용한 분위기에서도 사람들을 자연스럽게 편안하게 만드는 특별한 아우라를 가지고 있습니다.</p>
+          <p class="lang-en">The Deer Spirit has large, pure eyes, a slender and gentle face, and delicate features. Possesses a special aura that puts everyone at ease — effortlessly — even in quiet moments.</p>
           <div class="detail-grid">
             <div class="detail-item">
-              <div class="detail-item-label">성격 특성</div>
-              <div class="detail-item-value">깊은 포용력, 섬세한 감수성, 차분한 리더십. 상대를 판단하지 않고 있는 그대로 받아들임</div>
+              <div class="detail-item-label lang-ko">성격 특성</div>
+              <div class="detail-item-label lang-en">Personality</div>
+              <div class="detail-item-value lang-ko">깊은 포용력, 섬세한 감수성, 차분한 리더십. 상대를 있는 그대로 받아들임</div>
+              <div class="detail-item-value lang-en">Deep acceptance, delicate sensitivity, calm leadership. Embraces everyone as they are.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">추천 직업</div>
-              <div class="detail-item-value">심리상담사, 의사, 사회복지사, 교육자, 외교관, 비영리단체 대표</div>
+              <div class="detail-item-label lang-ko">추천 직업</div>
+              <div class="detail-item-label lang-en">Careers</div>
+              <div class="detail-item-value lang-ko">심리상담사, 의사, 사회복지사, 교육자, 외교관</div>
+              <div class="detail-item-value lang-en">Therapist, doctor, social worker, educator, diplomat</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">연애 스타일</div>
-              <div class="detail-item-value">상대방 중심의 사랑. 파트너의 행복을 위해 진심으로 헌신하며, 안정적이고 따뜻한 관계를 만들어감</div>
+              <div class="detail-item-label lang-ko">연애 스타일</div>
+              <div class="detail-item-label lang-en">Love Style</div>
+              <div class="detail-item-value lang-ko">상대방 중심의 사랑. 안정적이고 따뜻한 관계를 만들어감</div>
+              <div class="detail-item-value lang-en">Partner-centered. Sincerely devoted to the partner's happiness; builds warm, stable relationships.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">궁합 & 주의</div>
-              <div class="detail-item-value">호랑이상과 최고의 궁합. 다른 사람을 너무 배려하다 자신의 필요를 놓치지 않도록 주의</div>
+              <div class="detail-item-label lang-ko">궁합</div>
+              <div class="detail-item-label lang-en">Compatibility</div>
+              <div class="detail-item-value lang-ko">호랑이상과 최고의 궁합 &#x1F42F;</div>
+              <div class="detail-item-value lang-en">Best match: Tiger Spirit &#x1F42F;</div>
             </div>
           </div>
         </div>
 
-        <!-- 봉황상 -->
-        <h2>&#x1F525; 봉황상 (鳳凰相)</h2>
+        <!-- 봉황상 / Phoenix -->
+        <h2>&#x1F525; <span class="lang-ko">봉황상 (鳳凰相)</span><span class="lang-en">Phoenix Spirit (鳳凰相)</span></h2>
         <div class="animal-detail-card">
           <div class="animal-detail-header">
             <div class="animal-detail-emoji">&#x1F525;</div>
-            <div class="animal-detail-name">봉황상
-              <small>예술적 열정 · 창조적 영혼</small>
+            <div class="animal-detail-name">
+              <span class="lang-ko">봉황상<small>예술적 열정 · 창조적 영혼</small></span>
+              <span class="lang-en">Phoenix Spirit<small>Artistic Fire · Creative Soul</small></span>
             </div>
           </div>
-          <p>봉황상은 몽환적이고 표현력이 풍부한 눈, 독특하고 기억에 남는 이목구비가 특징입니다. 동양 신화에서 봉황은 아름다움과 재생, 창조를 상징하는 신성한 새입니다. 봉황상을 가진 사람은 손대는 모든 것을 아름답게 변환시키는 타고난 미적 감각과 독창성을 가지고 있습니다. 규칙과 틀을 벗어나 자신만의 세계를 만들어가는 진정한 크리에이터입니다.</p>
+          <p class="lang-ko">봉황상은 몽환적이고 표현력이 풍부한 눈, 독특하고 기억에 남는 이목구비가 특징입니다. 손대는 모든 것을 아름답게 변환시키는 타고난 미적 감각과 독창성을 가지고 있습니다.</p>
+          <p class="lang-en">The Phoenix Spirit has dreamy, expressive eyes and distinctive, memorable features. An innate aesthetic and originality that transforms everything they touch into something beautiful — a true creative force.</p>
           <div class="detail-grid">
             <div class="detail-item">
-              <div class="detail-item-label">성격 특성</div>
-              <div class="detail-item-value">탁월한 창의성, 독창적인 시각, 예술적 열정. 아름다움에 대한 높은 감수성과 진보적인 사고</div>
+              <div class="detail-item-label lang-ko">성격 특성</div>
+              <div class="detail-item-label lang-en">Personality</div>
+              <div class="detail-item-value lang-ko">탁월한 창의성, 독창적인 시각, 예술적 열정. 아름다움에 대한 높은 감수성</div>
+              <div class="detail-item-value lang-en">Outstanding creativity, unique vision, artistic passion. Extraordinary sensitivity to beauty.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">추천 직업</div>
-              <div class="detail-item-value">예술가, 패션 디자이너, 영화감독, 음악 프로듀서, 크리에이티브 디렉터, 뮤지션</div>
+              <div class="detail-item-label lang-ko">추천 직업</div>
+              <div class="detail-item-label lang-en">Careers</div>
+              <div class="detail-item-value lang-ko">예술가, 패션 디자이너, 영화감독, 음악 프로듀서, 크리에이티브 디렉터</div>
+              <div class="detail-item-value lang-en">Artist, fashion designer, film director, music producer, creative director</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">연애 스타일</div>
-              <div class="detail-item-value">이상적이고 낭만적인 사랑을 꿈꿈. 평범한 일상도 특별하게 만드는 감성적인 파트너이지만, 현실적인 부분에서 어려움을 겪을 수 있음</div>
+              <div class="detail-item-label lang-ko">연애 스타일</div>
+              <div class="detail-item-label lang-en">Love Style</div>
+              <div class="detail-item-value lang-ko">이상적이고 낭만적인 사랑을 꿈꿈. 일상을 특별하게 만드는 감성적인 파트너</div>
+              <div class="detail-item-value lang-en">Dreams of ideal, romantic love. Makes ordinary moments magical — though ideals can clash with reality.</div>
             </div>
             <div class="detail-item">
-              <div class="detail-item-label">궁합 & 주의</div>
-              <div class="detail-item-value">학상과 최고의 궁합. 이상과 현실 사이에서 균형을 찾는 것이 삶의 중요한 과제</div>
+              <div class="detail-item-label lang-ko">궁합</div>
+              <div class="detail-item-label lang-en">Compatibility</div>
+              <div class="detail-item-value lang-ko">학상과 최고의 궁합 &#x1F3F5;&#xFE0F;</div>
+              <div class="detail-item-value lang-en">Best match: Crane Spirit &#x1F3F5;&#xFE0F;</div>
             </div>
           </div>
         </div>
 
-        <h2>나의 동물상은 무엇일까?</h2>
-        <p>9가지 동물상은 관상학에서 영감을 받았지만, 현실에서는 대부분의 사람이 두 가지 이상의 동물상 특징을 복합적으로 가지고 있습니다. 예를 들어, 호랑이상의 리더십을 가지면서 학상의 지혜와 심미안을 함께 가진 사람도 많습니다. 동물상 분석은 어디까지나 자신을 재미있게 돌아보고 타인을 이해하는 계기로 활용하는 것이 좋습니다.</p>
-        <p>중요한 것은 어떤 동물상이든 그 유형만의 독특한 아름다움과 강점이 있다는 사실입니다. 관상학에서는 좋은 상과 나쁜 상이 있는 것이 아니라, 각각의 상이 가진 고유한 기질과 잠재력이 있다고 봅니다. 자신의 동물상 특징을 이해하고 강점을 극대화하는 것이 관상학이 전하는 진정한 지혜입니다.</p>
+        <!-- Closing -->
+        <h2 class="lang-ko">나의 동물상은 무엇일까?</h2>
+        <h2 class="lang-en">What's My Animal Spirit?</h2>
+        <div class="lang-ko">
+          <p>9가지 동물상은 관상학에서 영감을 받았지만, 현실에서는 대부분의 사람이 두 가지 이상의 동물상 특징을 복합적으로 가지고 있습니다. 동물상 분석은 어디까지나 자신을 재미있게 돌아보고 타인을 이해하는 계기로 활용하는 것이 좋습니다.</p>
+          <p>관상학에서는 좋은 상과 나쁜 상이 있는 것이 아니라, 각각의 상이 가진 고유한 기질과 잠재력이 있다고 봅니다. 자신의 동물상 특징을 이해하고 강점을 극대화하는 것이 관상학이 전하는 진정한 지혜입니다.</p>
+        </div>
+        <div class="lang-en">
+          <p>While the 9 types draw on physiognomy for inspiration, most people in reality carry traits from multiple types. Animal spirit analysis is best used as a playful lens for self-reflection and understanding others — not as a rigid category.</p>
+          <p>Physiognomy doesn't divide faces into "good" and "bad" — every type carries its own unique beauty and strength. Understanding your type and amplifying your strengths is the true wisdom physiognomy offers.</p>
+        </div>
 
         <div class="article-divider"></div>
 
-        <h2>관련 아티클</h2>
+        <h2 data-i18n="article.related">관련 아티클</h2>
         <div class="article-cards">
           <a href="article-physiognomy.html" class="article-card">
             <div class="article-card-icon">&#x1F4DC;</div>
-            <div class="article-card-title">관상학의 역사와 문화</div>
-            <p class="article-card-desc">동양 관상학의 기원부터 조선시대까지, 수천 년의 역사와 핵심 원리를 탐구합니다.</p>
-            <span class="article-card-tag">읽기 &#8594;</span>
+            <div class="article-card-title lang-ko">관상학의 역사와 문화</div>
+            <div class="article-card-title lang-en">History & Culture of Physiognomy</div>
+            <p class="article-card-desc lang-ko">동양 관상학의 기원부터 조선시대까지, 수천 년의 역사와 핵심 원리.</p>
+            <p class="article-card-desc lang-en">From ancient China to Joseon — thousands of years of face-reading wisdom.</p>
+            <span class="article-card-tag lang-ko">읽기 &#8594;</span>
+            <span class="article-card-tag lang-en">Read &#8594;</span>
           </a>
           <a href="article-tips.html" class="article-card">
             <div class="article-card-icon">&#x1F4F8;</div>
-            <div class="article-card-title">관상 분석 잘 받는 법</div>
-            <p class="article-card-desc">정확한 분석을 위한 사진 촬영 팁부터 결과 활용법까지.</p>
-            <span class="article-card-tag">읽기 &#8594;</span>
+            <div class="article-card-title lang-ko">관상 분석 잘 받는 법</div>
+            <div class="article-card-title lang-en">How to Get the Best Face Reading</div>
+            <p class="article-card-desc lang-ko">올바른 사진 촬영법부터 결과 해석과 활용법까지.</p>
+            <p class="article-card-desc lang-en">Photo tips, result interpretation, and how to make the most of it.</p>
+            <span class="article-card-tag lang-ko">읽기 &#8594;</span>
+            <span class="article-card-tag lang-en">Read &#8594;</span>
           </a>
           <a href="/#try" class="article-card">
             <div class="article-card-icon">&#x2728;</div>
-            <div class="article-card-title">지금 바로 관상 분석하기</div>
-            <p class="article-card-desc">사진 한 장으로 나의 동물상을 무료로 분석해 보세요.</p>
-            <span class="article-card-tag">시작하기 &#8594;</span>
+            <div class="article-card-title lang-ko">지금 바로 관상 분석하기</div>
+            <div class="article-card-title lang-en">Try Face Reading Now</div>
+            <p class="article-card-desc lang-ko">사진 한 장으로 나의 동물상을 무료로 분석해 보세요.</p>
+            <p class="article-card-desc lang-en">Upload a photo and discover your animal spirit for free.</p>
+            <span class="article-card-tag lang-ko">시작하기 &#8594;</span>
+            <span class="article-card-tag lang-en">Start &#8594;</span>
           </a>
         </div>
       </div>
@@ -373,37 +473,34 @@
   </div>
 
   <footer class="site-footer">
-    <div class="footer-inner">
+    <div class="footer-inner" style="grid-template-columns: repeat(3, 1fr)">
       <div class="footer-col">
-        <h4>내 관상 동물상</h4>
-        <p>동양 관상학으로 내 얼굴의 동물상을 알아보는 엔터테인먼트 서비스입니다.</p>
+        <h4 data-i18n="footer.brand">내 관상 동물상</h4>
+        <p data-i18n="footer.brand.desc">동양 관상학으로 내 얼굴의 동물상을 알아보는 엔터테인먼트 서비스입니다.</p>
       </div>
       <div class="footer-col">
-        <h4>링크</h4>
+        <h4 data-i18n="footer.links">링크</h4>
         <ul>
-          <li><a href="/#about">소개</a></li>
-          <li><a href="/#types">동물상 유형</a></li>
-          <li><a href="/#articles">관상 가이드</a></li>
-          <li><a href="/#faq">FAQ</a></li>
+          <li><a href="/#about" data-i18n="nav.about">소개</a></li>
+          <li><a href="/#types" data-i18n="nav.types">동물상 유형</a></li>
+          <li><a href="/#articles" data-i18n="nav.guide">관상 가이드</a></li>
+          <li><a href="/#faq" data-i18n="nav.faq">FAQ</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>법적 고지</h4>
+        <h4 data-i18n="footer.legal">법적 고지</h4>
         <ul>
-          <li><a href="privacy.html">개인정보처리방침</a></li>
-          <li><a href="terms.html">이용약관</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">개인정보처리방침</a></li>
+          <li><a href="terms.html" data-i18n="footer.terms">이용약관</a></li>
         </ul>
-      </div>
-      <div class="footer-col">
-        <h4>문의</h4>
-        <p>질문이나 피드백이 있으신가요?<br><a href="mailto:contact@aifacereading.com">contact@aifacereading.com</a></p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 내 관상 동물상. All rights reserved. 본 서비스는 엔터테인먼트 목적으로 제공됩니다.</p>
+      <p data-i18n="footer.copyright">&copy; 2025 내 관상 동물상. All rights reserved.</p>
     </div>
   </footer>
 
+  <script src="/i18n.js"></script>
   <script>
     document.getElementById('navToggle').addEventListener('click', function() {
       document.querySelector('.nav-links').classList.toggle('open');
