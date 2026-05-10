@@ -413,17 +413,21 @@ function shareResult() {
   const lang = localStorage.getItem('lang') || 'ko';
   const name = type.name[lang] || type.name.ko;
   const desc = type.desc[lang] || type.desc.ko;
+  const url = 'https://ai-test-d4dec.web.app/';
   const text = lang === 'ko'
-    ? `나의 관상 동물상은 "${type.nameKo}" ${type.emoji}! ${desc}\n\n너도 해봐!`
-    : `I got "${name}" ${type.emoji} on My Face Reading! ${desc}\n\nTry it yourself!`;
+    ? `나의 관상 동물상은 "${type.nameKo}" ${type.emoji}! ${desc}\n\n너도 해봐! ${url}`
+    : `I got "${name}" ${type.emoji} on My Face Reading! ${desc}\n\nTry it yourself! ${url}`;
 
   if (navigator.share) {
-    navigator.share({ title: 'AI Face Reading Result', text }).catch(() => {});
+    navigator.share({ title: lang === 'ko' ? '내 관상 동물상' : 'My Face Reading', text, url }).catch(() => {});
   } else {
     navigator.clipboard.writeText(text).then(() => {
       const btn = document.getElementById('shareBtn');
-      btn.textContent = 'Copied! ✅';
-      setTimeout(() => btn.textContent = 'Share Result 📤', 2000);
+      btn.textContent = lang === 'ko' ? '복사됨! ✅' : 'Copied! ✅';
+      setTimeout(() => {
+        const t = window.T && window.T[localStorage.getItem('lang') || 'ko'];
+        btn.textContent = (t && t['try.share']) || '결과 공유하기 📤';
+      }, 2000);
     });
   }
 }
