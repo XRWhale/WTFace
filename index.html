@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>내 관상 동물상 - 동양 관상으로 보는 나의 얼굴 동물상 테스트</title>
-  <meta name="description" content="동양 관상학으로 내 얼굴의 동물상을 알아보세요! 사진 한 장이면 OK. 호랑이상, 여우상, 토끼상 등 9가지 동물상 중 나는 어떤 유형? 무료 관상 테스트" />
+  <title>동양의 미로 너를 확인해봐 — Eastern Face Reading</title>
+  <meta name="description" content="K-beauty가 사랑받는 이유, 네 얼굴로 직접 확인해봐. 동양 관상학 기반 무료 얼굴 분석. 사진 한 장이면 OK." />
   <meta name="keywords" content="관상 테스트, 동물상 테스트, 내 동물상, 관상 보기, 얼굴 관상, 관상학, 호랑이상, 여우상, 토끼상, 사슴상, face reading, physiognomy" />
   <link rel="canonical" href="https://ai-test-d4dec.web.app/" />
   <link rel="alternate" hreflang="ko" href="https://ai-test-d4dec.web.app/" />
@@ -125,7 +125,7 @@
     gtag('config', 'G-96NHE03ZGS');
   </script>
   <meta name="google-adsense-account" content="ca-pub-2785113979236345">
-  <link href='/style.css' rel='stylesheet'>
+  <link href='style.css' rel='stylesheet'>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2785113979236345"
      crossorigin="anonymous"></script>
 </head>
@@ -145,13 +145,25 @@
     <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section" id="home">
-    <div class="hero-content">
-      <div class="header-icon">&#x1F52E;</div>
-      <h1 data-i18n="hero.title">내 관상 동물상</h1>
-      <p class="hero-desc" data-i18n="hero.desc">동양 관상학으로 내 얼굴의 동물상을 알아보세요!<br>사진 한 장이면 나의 숨겨진 동물 기질을 확인할 수 있습니다.</p>
-      <a href="#try" class="btn btn-primary hero-cta" data-i18n="hero.cta">관상 분석 시작하기</a>
+  <!-- Landing Section: Before/After Grid -->
+  <section class="landing-section" id="home">
+    <div class="landing-grid-wrap">
+      <div class="before-after-grid" id="beforeAfterGrid">
+        <div class="flip-cell"><div class="flip-inner"><div class="flip-front ba-v1 ba-before"></div><div class="flip-back ba-a1 ba-after"></div></div></div>
+        <div class="flip-cell"><div class="flip-inner"><div class="flip-front ba-v2 ba-before"></div><div class="flip-back ba-a2 ba-after"></div></div></div>
+        <div class="flip-cell"><div class="flip-inner"><div class="flip-front ba-v3 ba-before"></div><div class="flip-back ba-a3 ba-after"></div></div></div>
+        <div class="flip-cell"><div class="flip-inner"><div class="flip-front ba-v2 ba-before"></div><div class="flip-back ba-a1 ba-after"></div></div></div>
+        <div class="flip-cell"><div class="flip-inner"><div class="flip-front ba-v1 ba-before"></div><div class="flip-back ba-a2 ba-after"></div></div></div>
+        <div class="flip-cell"><div class="flip-inner"><div class="flip-front ba-v3 ba-before"></div><div class="flip-back ba-a3 ba-after"></div></div></div>
+        <div class="flip-cell"><div class="flip-inner"><div class="flip-front ba-v3 ba-before"></div><div class="flip-back ba-a2 ba-after"></div></div></div>
+        <div class="flip-cell"><div class="flip-inner"><div class="flip-front ba-v1 ba-before"></div><div class="flip-back ba-a1 ba-after"></div></div></div>
+        <div class="flip-cell"><div class="flip-inner"><div class="flip-front ba-v2 ba-before"></div><div class="flip-back ba-a3 ba-after"></div></div></div>
+      </div>
+      <div class="landing-overlay">
+        <h1 class="landing-title" data-i18n="landing.title">동양의 미로 너를 확인해봐</h1>
+        <p class="landing-sub" data-i18n="landing.sub">K-beauty가 사랑받는 이유, 네 얼굴로 확인해</p>
+        <button class="btn btn-primary landing-upload-btn" id="landingUploadBtn" data-i18n="landing.cta">사진 업로드</button>
+      </div>
     </div>
   </section>
 
@@ -469,8 +481,8 @@
     </div>
   </footer>
 
-  <script defer type="text/javascript" src="/main.js"></script>
-  <script defer type="text/javascript" src="/i18n.js"></script>
+  <script defer type="text/javascript" src="main.js"></script>
+  <script defer type="text/javascript" src="i18n.js"></script>
   <script>
     document.getElementById('navToggle').addEventListener('click', function() {
       document.querySelector('.nav-links').classList.toggle('open');

@@ -181,6 +181,8 @@ let uploadedImageData = null;
 
 // ── DOM Ready ──
 document.addEventListener('DOMContentLoaded', () => {
+  initFlipGrid();
+
   const uploadArea = document.getElementById('uploadArea');
   const fileInput = document.getElementById('fileInput');
   const previewArea = document.getElementById('previewArea');
@@ -189,6 +191,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const analyzeBtn = document.getElementById('analyzeBtn');
   const retryBtn = document.getElementById('retryBtn');
   const shareBtn = document.getElementById('shareBtn');
+
+  const landingUploadBtn = document.getElementById('landingUploadBtn');
+  if (landingUploadBtn) {
+    landingUploadBtn.addEventListener('click', () => fileInput.click());
+  }
 
   // Upload click
   uploadArea.addEventListener('click', () => fileInput.click());
@@ -238,6 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
       uploadArea.style.display = 'none';
       previewArea.style.display = 'flex';
       analyzeBtn.disabled = false;
+      document.getElementById('try').scrollIntoView({ behavior: 'smooth' });
     };
     reader.readAsDataURL(file);
   }
@@ -405,6 +413,33 @@ function showResult() {
 
   // Store for sharing
   window._lastResult = type;
+}
+
+// ── Before/After Flip Grid ──
+function initFlipGrid() {
+  const cells = Array.from(document.querySelectorAll('.flip-cell'));
+  if (!cells.length) return;
+
+  // Set random initial states without transition
+  cells.forEach(cell => {
+    const inner = cell.querySelector('.flip-inner');
+    inner.style.transition = 'none';
+    if (Math.random() > 0.5) cell.classList.add('flipped');
+    void inner.offsetWidth; // force reflow
+    inner.style.transition = '';
+  });
+
+  // Schedule ongoing random flips per cell
+  cells.forEach(cell => {
+    const scheduleFlip = () => {
+      const delay = 1800 + Math.random() * 1400;
+      setTimeout(() => {
+        cell.classList.toggle('flipped');
+        scheduleFlip();
+      }, delay);
+    };
+    setTimeout(scheduleFlip, Math.random() * 2000);
+  });
 }
 
 // ── Share ──

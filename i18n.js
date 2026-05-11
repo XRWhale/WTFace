@@ -1,7 +1,7 @@
 // ── i18n Translation System ──
 const T = {
   // Navigation
-  'nav.logo': { ko: '&#x1F52E; 내 관상 동물상', en: '&#x1F52E; Face Reading' },
+  'nav.logo': { ko: '&#x2728; 동양의 美', en: '&#x2728; Eastern Beauty' },
   'nav.about': { ko: '소개', en: 'About' },
   'nav.types': { ko: '동물상 유형', en: 'Animal Types' },
   'nav.guide': { ko: '관상 가이드', en: 'Guide' },
@@ -21,7 +21,18 @@ const T = {
   'tips.title':   { ko: '관상 분석 잘 받는 법', en: 'How to Get the Best Face Reading' },
   'tips.desc':    { ko: '정확한 관상 분석을 위한 올바른 사진 촬영법부터 결과를 일상에서 활용하는 방법까지.', en: 'From choosing the right photo to interpreting your results — make the most of your face reading.' },
 
-  // Hero
+  // Landing (new hero)
+  'landing.title': {
+    ko: '동양의 미로 너를 확인해봐',
+    en: 'See yourself through 1000 years of Eastern beauty'
+  },
+  'landing.sub': {
+    ko: 'K-beauty가 사랑받는 이유, 네 얼굴로 확인해',
+    en: 'Why K-beauty rules the world — see it in your face.'
+  },
+  'landing.cta': { ko: '사진 업로드', en: 'Upload Your Photo' },
+
+  // Hero (try section)
   'hero.title': { ko: '내 관상 동물상', en: 'My Face Reading' },
   'hero.desc': {
     ko: '동양 관상학으로 내 얼굴의 동물상을 알아보세요!<br>사진 한 장이면 나의 숨겨진 동물 기질을 확인할 수 있습니다.',
@@ -356,8 +367,8 @@ function setLang(lang) {
   // Update page title based on page
   if (document.querySelector('[data-page="index"]')) {
     document.title = lang === 'ko'
-      ? '내 관상 동물상 - 동양 관상으로 보는 나의 얼굴 동물상 테스트'
-      : 'My Face Reading - Discover Your Animal Spirit';
+      ? '동양의 미로 너를 확인해봐 — 동양 관상 테스트'
+      : 'See Yourself Through Eastern Beauty — Face Reading';
   } else if (document.querySelector('[data-page="privacy"]')) {
     document.title = lang === 'ko' ? '개인정보처리방침 - 내 관상 동물상' : 'Privacy Policy - My Face Reading';
   } else if (document.querySelector('[data-page="terms"]')) {
